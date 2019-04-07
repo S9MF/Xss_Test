@@ -9,7 +9,7 @@
   测试脚本
   ```php
   <?php   
-    $input = @$_GET["xss"];
+    $input = @$_REQUEST["xss"];
     echo "<div>".$input."</div>"
   ?>
   ```
