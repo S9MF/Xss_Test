@@ -176,7 +176,7 @@
   例如： 
   `<iframe onload=location='javascript:alert(1)'>`拦截
   
-  ![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v9dvxe1jj30uj06tq3d.jpg)
+  ![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v9q2svh3j30uj06tq3d.jpg)
   
   使用concat来拼接字符串`javascript:alert(1)`
   
