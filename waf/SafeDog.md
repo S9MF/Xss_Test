@@ -254,3 +254,11 @@
   ```
   ![30](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vd284ozcj30uj09ejs5.jpg)
 
+  ### 杂谈
+  结合一些分割组合函数，再进行编码，尝试绕过waf，查看是否调用jquery框架。我也是刚刚学xss不久，难免有所出错，希望师傅指正。
+  
+  ### 参考
+  https://secvul.com/topics/259.html
+  http://vinc.top/2014/11/13/绕过waf的姿势总结/
+  https://www.t00ls.net/viewthread.php?tid=46056&highlight=攻破黑市之拿下吃鸡DNF等游戏钓鱼站群
+  
