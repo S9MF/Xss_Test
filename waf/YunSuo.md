@@ -80,10 +80,12 @@ JS16编码：
 
 ![15](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xwgo4zb3j30fl083wen.jpg)
 
-这样
+这样你就能理解下面这个例子了。
 ```
 <details open ontoggle=top[8680439..toString(30)](1); >
+<details open ontoggle=top[11189117..toString(32)](1); >
 ```
+![16](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xwsdzqctj30uj0930tj.jpg)
 
 ### 俩个例子
 - - -
