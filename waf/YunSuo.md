@@ -56,9 +56,11 @@
 ```html
 JS8编码：
 <details open ontoggle=top['al\145rt'](1) >
+<details open ontoggle=top['\141\154\145\162\164'](1) >
 JS16编码：
 <details open ontoggle=top['al\x65rt'](1) >
-<details open ontoggle=top['\141\154\145\162\164'](1) >
+其他
+<details open ontoggle=top[/al/.source%2B/ert/.source](1) >
 ```
 ### parseInt()与toString()
 - - -
