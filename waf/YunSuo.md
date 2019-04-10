@@ -6,3 +6,10 @@
 - - -
 前几天花了10买了一个月的服务器，换个waf来测试。
 ![1](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xeuqs6nwj30g60cgdge.jpg)   
+
+### Test
+
+遗漏标签就不测试了，上一篇[水文](https://www.anquanke.com/post/id/176185)的分享的标签也可以过，不信找几个试试= =
+
+好吧非常打脸
+![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xf5z6pwcj30uj0590t6.jpg)
