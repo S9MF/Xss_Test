@@ -139,7 +139,7 @@ waf拦截
 ```html
 <svg/onload=setTimeout`alert\u0028233\u0029`>
 ```
-![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy5mcdg4j30uj0813z5.jpg)
+![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy76ggesj30uj0813z5.jpg)
 
 
 
