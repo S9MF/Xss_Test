@@ -15,7 +15,7 @@
 
 ![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xf5z6pwcj30uj0590t6.jpg)
 
-然而换个prompt()函数???免费版当然是这样的啦，高级服务不仅我买不起，还绕不过啊，主要是我不是真正的站长，规则我也不会设啊。
+然而换个prompt()函数???免费版当然是这样的啦，高级服务不仅我买不起，还绕不过啊，而且我不是真正的站长，规则我也不会设啊。
 
 ![3](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xf9uioa9j30uj094wf8.jpg)
 
