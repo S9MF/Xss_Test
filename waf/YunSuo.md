@@ -38,6 +38,6 @@
 <details open ontoggle=frames['al'%2B'ert'](1) >
 <details open ontoggle=content['al'%2B'ert'](1) >
 ```
-这些都可以绕过waf，总结起来有 `top` `self` `parent` `frames` `content` `windiow`，无疑`top`是最短的，所谓短小精悍。
+这些都可以绕过waf，总结起来有 `top` `self` `parent` `frames` `content` `windiow`，无疑`top`是最短的，所谓短小精悍，这里借用PKAV的一张ppt。
 
 ![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xkryc227j30fp073782.jpg)
