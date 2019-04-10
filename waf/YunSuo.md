@@ -12,9 +12,11 @@
 遗漏标签就不测试了，上一篇[水文](https://www.anquanke.com/post/id/176185)的分享的标签也可以过，不信找几个试试= =
 
 好吧非常打脸，拦截了。
+
 ![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xf5z6pwcj30uj0590t6.jpg)
 
-然而换个prompt()函数???免费版当然是这样的啦，高级服务不仅我买不起，还绕不过啊
+然而换个prompt()函数???免费版当然是这样的啦，高级服务不仅我买不起，还绕不过啊，主要是我不是真正的站长，规则我也不会设啊。
+
 ![3](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xf9uioa9j30uj094wf8.jpg)
 
 ![4](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xff076fvj30c80c874l.jpg)
