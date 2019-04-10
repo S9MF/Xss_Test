@@ -60,8 +60,30 @@ JS16编码：
 <details open ontoggle=top['al\x65rt'](1) >
 <details open ontoggle=top['\141\154\145\162\164'](1) >
 ```
+### parseInt()与toString()
+- - -
+**parseInt()**
+
+![12](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xw3xjyifj30nj0b1dga.jpg)
+
+例子: `alert`字符串用`parseInt函数`，以基数为30转化后为`8680439`
 
 
+![13](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xw6xbo82j30ff05tq2z.jpg)
+
+**toString()**
+
+
+![14](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xwe1vapzj30g809z0sx.jpg)
+
+例子: `toString函数`将返回的数字`8680439`,以基数为30还原
+
+![15](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xwgo4zb3j30fl083wen.jpg)
+
+这样
+```
+<details open ontoggle=top[8680439..toString(30)](1); >
+```
 
 ### 俩个例子
 - - -
@@ -95,7 +117,7 @@ JS16编码：
 
 ![10](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xom9zf77j30uj097mxz.jpg)
 
-setTimeout()函数也是没问题的，毕竟也能执行代码。
+setTimeout()函数也是没问题的，毕竟也能执行代码。 
 ```
 <details open ontoggle=top[a='meout',b='setTi',b%2ba]('\141\154\145\162\164\50\61\51')>
 ```
