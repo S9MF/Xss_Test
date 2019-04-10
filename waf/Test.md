@@ -34,6 +34,7 @@ IE:
   
   
  eval('ale'+'rt(0)');
+window.onerror = function()
 Function("ale"+"rt(1)")();
 new Function`al\ert\`6\``;
 
