@@ -233,6 +233,19 @@ waf拦截
 
 ### 补充(又是补充，你**就不能一次讲完嘛!写个文章还划水!)
 - - -
+
 咳咳，该补充的还是要补充的，除了 Set 对象还有嘛？当然有的。
 
+![33](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ykvh8ot8j30ak08rwhp.jpg)
 
+看些例子，都可以弹窗。
+
+![34](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yl20qvebj30sf09rgm2.jpg)
+
+来个简单拆分。
+
+![35](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yl50p5ykj30uj09at9g.jpg)
+ 
+总结起来就是`Set.constructor` `Map.constructor` `clear.constructor` `Array.constructor` `WeakSet.constructor` (注意区分大小写的)
+
+引用...
