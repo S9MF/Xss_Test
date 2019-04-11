@@ -160,6 +160,16 @@ waf拦截
 
 关于运用基于DOM的方法创建和插入节点把外部JS文件注入到网页，这种方法在<<XSS跨站脚本gj剖析与防御>>有介绍过。我这里简单演示下，如果你了解或者不感兴趣可以跳过这段。
 
+首先用createElement方法创建一个script标签。
+
+![23](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ydpwjmafj30fh07jt8s.jpg)
+
+接下来给<script>的src属性设置成外部url
+ 
+ ![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ydrl28mhj30fe0b1jrn.jpg)
+ 
+ <script>标签以及src属性已经被创建出来，但是并在页面上输出啊。
+
 `Set.constructor`不是很常见，但是也能执行代码
 `<svg/onload=Set.constructor('ale'%2B'rt(13)')()>`
 
