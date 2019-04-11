@@ -128,7 +128,7 @@ setTimeout()函数也是没问题的，毕竟也能执行代码。
 
 ## eval函数的补充
 - - -
-`setTimeout`比eval略眼熟，也是比较常见的。
+#### setTimeout
 
 ![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ycyd6jedj30no0adt90.jpg)
 
@@ -143,6 +143,8 @@ waf拦截
 <svg/onload=setTimeout`alert\u0028233\u0029`>
 ```
 ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xy76ggesj30uj0813z5.jpg)
+
+#### setInterval
 
 与`setInterval`不同，对于`setTimeout()`只执行code一次。
 
