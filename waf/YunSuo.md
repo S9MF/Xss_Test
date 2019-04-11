@@ -167,15 +167,3 @@ waf拦截
 接下来给<script>的src属性设置成外部url
  
 ![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ydrl28mhj30fe0b1jrn.jpg)
- 
-<script>标签以及src属性已经被创建出来，但是并在页面上输出啊。
- 
-![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yek54s94j30fc0a3mx9.jpg)
- 
-我们就要用到appendChild()方法将变量s插入到body。
-
-![26](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yelv3kzuj30fd09pt93.jpg)
-
-再来看看页面上
-
-![27](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yemyk3t8j30fg0ajjrl.jpg)
