@@ -201,6 +201,7 @@ waf拦截
 
 ### constructor属性
 
+![28](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yk1fdzqmj30fh07idfu.jpg)
 
 
 
