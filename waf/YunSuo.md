@@ -187,7 +187,7 @@ waf拦截
  
 ![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ydrl28mhj30fe0b1jrn.jpg)
 
-可以看到<script>标签以及src属性已经被创建出来，但是并在页面上输出啊。
+可以看到<script>标签以及src属性已经被创建出来，但是并不在页面上输出啊。
  
 ![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yf3ujkccj30fe0a174d.jpg)
 
