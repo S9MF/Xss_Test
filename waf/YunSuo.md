@@ -107,7 +107,7 @@ JS16编码：
 测试下，拦截了。
 ![8](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xodipv2ej30uj05hmxm.jpg)
 
-其实waf，拦截的是alert这个关键字，换个`prompt()`函数就过了
+其实waf拦截的是alert这个关键字，换个`prompt()`函数就过了
 
 ![9](https://ws1.sinaimg.cn/large/005DAKuvgy1g1xoh9uty6j30uj086q3n.jpg)
 
