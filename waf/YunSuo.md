@@ -265,5 +265,6 @@ waf拦截
 ## 参考致谢
 
 [vulnerability-lab.com](http://www.vulnerability-lab.com/resources/documents/531.txt)
+
 [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 
