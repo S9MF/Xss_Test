@@ -248,4 +248,10 @@ waf拦截
  
 总结起来就是`Set.constructor` `Map.constructor` `clear.constructor` `Array.constructor` `WeakSet.constructor` (注意区分大小写的)
 
-引用...
+引用外部...
+
+![36](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ylf0t8nsj306o06ojrl.jpg)
+
+## 参考致谢
+- - -
+[swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
