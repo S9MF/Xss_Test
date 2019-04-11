@@ -170,14 +170,4 @@ waf拦截
  
  <script>标签以及src属性已经被创建出来，但是并在页面上输出啊。
 
-`Set.constructor`不是很常见，但是也能执行代码
-`<svg/onload=Set.constructor('ale'%2B'rt(13)')()>`
 
-其他：
-
-```html
-<svg/onload=setInterval`alert\u0028233\u0029`>
- //注意后面2个反引号
-<svg/onload=Set.constructor`alert\u0028233\u0029```>
-
-```
