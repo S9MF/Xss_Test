@@ -260,7 +260,7 @@ waf拦截
 
 ![36](https://ws1.sinaimg.cn/large/005DAKuvgy1g1ylf0t8nsj306o06ojrl.jpg)
 
-感兴趣的同学可以关注：[Github项目](https://github.com/S9MF/Xss_Test/edit/master/waf/YunSuo.md)
+感兴趣的同学可以关注：[Github项目](https://github.com/S9MF/Xss_Test/blob/master/waf/YunSuo.md)
 
 ## 参考致谢
 
