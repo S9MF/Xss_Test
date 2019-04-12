@@ -49,3 +49,19 @@ map函数可以返回一个数组`[1].map`，而且我们在使用`map`函数的
 这里返回结果为变量名`demo`，函数表达式也可以叫匿名函数，基本特征是没有函数名，
 
 ![5](https://ws1.sinaimg.cn/large/005DAKuvgy1g204yvqam0j30fe05wglo.jpg)
+
+如果我们向匿名函数内添加`形参`为函数alert，再执行函数，那么可以达到弹窗的效果嘛?
+
+`Function('alert(1)')();`答案显而易见。
+
+![6](https://ws1.sinaimg.cn/large/005DAKuvgy1g205htqg05j30ts09egmc.jpg)
+
+然而alert关键字还是太敏感了，可以尝试将形参编码。
+
+`Function('al\x65\x72\x74\x281\x29')();`
+
+成功弹窗。
+
+![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g205pwfwjvj30ts09i0th.jpg)
+
+拼接也是可以达到同样的效果`Function('ale'%2b'rt(1)')();`
