@@ -14,9 +14,11 @@
 
 #### map()函数
 map函数可以返回一个数组，`[1].map`，而且我们在使用`map`函数的时候往往会传入一个函数，如果我们传递一个`alert`函数，那么将触发xss。
-```
+```php
 [1].map(alert)
 ```
 ![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g200cpnu7bj30lk03z0sp.jpg)
 
+类似的数组操作函数不在少数，我所知的就有**find**，**every**，**filter**，**forEach**，**findIndex**。它们和**map**函数都有一个共同的特点，可以返回数组，而且在使用的同时还以可以插入一个函数，这就为我们构造payload提供更多的选择。
 
+我们思考一下，在那些情况下我们可以使用，其实满多，可以先看个demo
