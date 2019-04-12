@@ -81,4 +81,4 @@ open()方法属性打开一个新的浏览器窗口，可在括号内加入参�
 ![9](https://ws1.sinaimg.cn/large/005DAKuvgy1g2079o9zibj30vn08k756.jpg)
 
 ### 神奇的constructor
-还记得前篇文章[测试WAF来学习XSS姿势(二)](https://www.anquanke.com/post/id/176300)执行代码姿势补充那段嘛，当时我以为自己已经把constructor的坑填完了，
+还记得前篇文章[测试WAF来学习XSS姿势(二)](https://www.anquanke.com/post/id/176300)执行代码姿势补充那段嘛，当时我以为自己，已经把`constructor`的坑填完了，早上起来查资料学习，又发现一个可用知识。
