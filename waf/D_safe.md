@@ -65,3 +65,17 @@ map函数可以返回一个数组`[1].map`，而且我们在使用`map`函数的
 ![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g205pwfwjvj30ts09i0th.jpg)
 
 拼接也是可以达到同样的效果`Function('ale'%2b'rt(1)')();`
+
+### open()属性
+- - -
+open()方法属性打开一个新的浏览器窗口，可在括号内加入参数`open(alert(1)`
+
+成功弹窗。
+
+![8](https://ws1.sinaimg.cn/large/005DAKuvgy1g206z75ou0j30ts09naas.jpg)
+
+好玩的是，我们使用伪协议时，将会在新窗口弹出。
+
+`<body onpageshow=open('java'%2b'script:ale'%2b'rt(1)') >`
+
+![9](https://ws1.sinaimg.cn/large/005DAKuvgy1g2079o9zibj30vn08k756.jpg)
