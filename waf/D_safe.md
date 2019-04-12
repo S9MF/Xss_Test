@@ -4,5 +4,19 @@
 
 ![1](https://ws1.sinaimg.cn/large/006Xzox4ly1g1ky4we8ghj306o06oq34.jpg)
 
-### 
+### 提醒
+- - -
+本文分两部分，前部分是总结新学的姿势，后半部分测试Waf。
+
+### 数组方式
+- - -
+前两篇文章，我们利用js里的对象成员方法也可以用数组的形式的表示，以此构造了许多payload，在数组内将敏感函数拼接，以此来绕过。以`top`对象为演示的，在Javascrip中，可以连接数组的函数有其他可以补充的。
+
+#### map()函数
+map函数可以返回一个数组，`[1].map`，而且我们在使用`map`函数的时候往往会传入一个函数，如果我们传递一个`alert`函数，那么将触发xss。
+```
+[1].map(alert)
+```
+![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g200cpnu7bj30lk03z0sp.jpg)
+
 
