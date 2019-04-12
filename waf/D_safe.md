@@ -46,6 +46,6 @@ map函数可以返回一个数组`[1].map`，而且我们在使用`map`函数的
 - - -
 在javascript，定义函数的方式有两种：一种是函数声明，另一种就是函数表达式。
 
-返回结果为变量名`demo`，函数表达式的基本特征是没有函数名。
+返回结果为变量名`demo`，函数表达式的基本特征是没有函数名，
 
 ![5](https://ws1.sinaimg.cn/large/005DAKuvgy1g204yvqam0j30fe05wglo.jpg)
