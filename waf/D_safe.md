@@ -128,5 +128,5 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 ```php
 <details open ontoggle=prompt(1)>
 <select autofocus onfocus=prompt(1)>
-<button onfocus=confirm(1) autofocus>
+<button onfocus=prompt(1) autofocus>
 ```
