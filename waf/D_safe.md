@@ -157,5 +157,22 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 
 ![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ro44atcj30vn07y3z0.jpg)
 
+#### 利用top
+- - -
+前几篇文章介绍了top属性的知识，不拿来用对不起自己啊，上文使用反引号虽然绕过了waf，但是引入了双引号，如果过滤了双引号，该如何解决呢?
+
+top可以连接一个函数，那么直接连接alert就行了，如果你看过上篇文章，其他的self parent frames content window 都可以使用。
+
+```html
+<body onpageshow=top.alert`1`>
+```
+
+![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g20sep7j5xj30vn09jq3o.jpg)
+
+这样就可以摆脱使用双引号，当然如果过滤了`.`，你可以考虑url编码。
+
+```html
+<body onpageshow=top%2ealert`1`>
+```
 
 
