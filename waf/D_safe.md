@@ -208,6 +208,15 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 问题来了，虽然*onmouseover*事件可以通过滑动鼠标来触发，如何执行*alert*呢?如果使用拼接的话，必然带()，比较难绕过。思来想去发现可以尝试用反引号。
 
+![26](https://ws1.sinaimg.cn/large/005DAKuvgy1g20vptexmsj30vn07zgm5.jpg)
 
+还是()的锅，不过setInterval不拦截的话，我们可以编码啊。
 
+```html
+<svg onmouseover=setInterval`al\x65rt\x28/xss/\x29```>
+```
+成功绕过。
 
+![27](https://ws1.sinaimg.cn/large/005DAKuvgy1g20vs1ujajj30vn09g752.jpg)
+
+执行字符串的可用`payload`，
