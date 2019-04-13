@@ -242,5 +242,6 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 ### 参考致谢
 - - -
 * http://www.vulnerability-lab.com/resources/documents/531.txt
+* https://www.t00ls.net/viewthread.php?tid=43475&highlight=%2B%E9%A3%8E%E5%9C%A8%E6%8C%87%E5%B0%96
 * https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
 
