@@ -141,3 +141,19 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 
 ![16](https://ws1.sinaimg.cn/large/005DAKuvgy1g20r88lsw4j30vn07z3z0.jpg)
 
+回去查看Waf拦截记录，可以看出，是触发了某种规则。
+
+![17](https://ws1.sinaimg.cn/large/005DAKuvgy1g20re1issej30c80ae3yi.jpg)
+
+这个规则有个`缺陷`，alert函数后面带有`()`括号就拦截，那么如果我`不用括号`呢?我们不妨来试试`反引号`。
+
+<details/open/ontoggle="alert`1`">
+
+![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g20rj1z6b3j30vn09cdgn.jpg)
+
+成功绕过，注意这里包括的一点要用`双引号`，单引号会拦截。
+
+![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ro44atcj30vn07y3z0.jpg)
+
+
+
