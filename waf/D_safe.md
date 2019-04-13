@@ -153,7 +153,7 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 
 ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g20rj1z6b3j30vn09cdgn.jpg)
 
-成功绕过，注意这里包括的一点要用`双引号`，单引号会拦截。
+成功绕过，注意这里包括字符串的要用双引号，单引号会拦截。
 
 ![19](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ro44atcj30vn07y3z0.jpg)
 
