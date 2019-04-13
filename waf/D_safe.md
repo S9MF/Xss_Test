@@ -204,8 +204,10 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 可是还是拦截了，推测是onload 事件的锅，那么换个事件*onmouseover* 就不拦截了。
 
-![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ummef92j30vn04kgly.jpg)
+![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ut9sseij30vn051jrq.jpg)
 
-问题来了，虽然*onmouseover*事件可以通过滑动鼠标来触发，如何执行*alert*呢?
+问题来了，虽然*onmouseover*事件可以通过滑动鼠标来触发，如何执行*alert*呢?如果使用拼接的话，必然带()，比较难绕过。思来想去发现可以尝试用反引号。
+
+
 
 
