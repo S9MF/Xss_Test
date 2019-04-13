@@ -102,3 +102,24 @@ constructor是一个对象的属性，这个属性存在在此对象的prototype
 constructor.constructor`al\x65rt\x28/xss/\x29```
 ```
 
+### Waf测试
+- - -
+首先，我们先拿来些常用标签看看，是否会被Waf拦截，如果这个标签一出现就拦截，那我们不必在此浪费时间。
+
+Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑。
+
+![11](https://ws1.sinaimg.cn/large/005DAKuvgy1g20pitr8x3j30vn07zjrt.jpg)
+
+找一些略微生僻的，例如```<input autofocus onfocus=alert(1)>```
+
+![12](https://ws1.sinaimg.cn/large/005DAKuvgy1g20puuqh9kj30vn04s74o.jpg)
+
+虽然拦截了，但是当我们把alert去掉后，就不拦截，说明这个标签可用。
+
+![13](https://ws1.sinaimg.cn/large/005DAKuvgy1g20px6nq6lj30vn04uq3a.jpg)
+
+`alert`不行，可以考虑的有`prompt`，`confirm`，还有```window.onerror=alert;throw 1```这个在这里有些鸡肋不考虑。
+
+成功弹窗。
+
+![14](https://ws1.sinaimg.cn/large/005DAKuvgy1g20q4y8pftj30vn093751.jpg)
