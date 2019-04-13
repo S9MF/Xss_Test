@@ -169,10 +169,15 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 ![20](https://ws1.sinaimg.cn/large/005DAKuvgy1g20sep7j5xj30vn09jq3o.jpg)
 
-这样就可以摆脱使用双引号，当然如果过滤了`.`，你可以考虑url编码。
+这样就可以摆脱使用双引号，当然如果过滤了`.` 你可以考虑url编码。
 
 ```html
 <body onpageshow=top%2ealert`1`>
 ```
+#### 利用map
+还记得map嘛?返回一个数组，传入一个函数，我们尝试一下能否绕过。
+
+`[1].map(alert)`依赖map的特性，可以避免alert函数后面带有()括号，以此触发规则。
+
 
 
