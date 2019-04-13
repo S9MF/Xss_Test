@@ -179,5 +179,16 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 `[1].map(alert)`依赖map的特性，可以避免alert函数后面带有()括号，以此触发规则。
 
+![21](https://ws1.sinaimg.cn/large/005DAKuvgy1g20sxhhgamj30vn09kjs7.jpg)
+
+其他
+```html
+  <details open ontoggle=[1].find(alert)>
+  <details open ontoggle=[1].%65very(alert)>
+  <details open ontoggle=[1].\u0066orEach(alert)>
+```
+
+#### 执行字符串
+- - -
 
 
