@@ -194,5 +194,18 @@ top可以连接一个函数，那么直接连接alert就行了，如果你看过
 
 ![22](https://ws1.sinaimg.cn/large/005DAKuvgy1g20twsuplaj30ex0agjss.jpg)
 
+这个妥妥的拦截。
+
+![23](https://ws1.sinaimg.cn/large/005DAKuvgy1g20u9nopk5j30vn07y3yz.jpg)
+
+通过测试我们发现，alert后面不更()就不会拦截。
+
+![24](https://ws1.sinaimg.cn/large/005DAKuvgy1g20uicuvz3j30vn07ymxn.jpg)
+
+可是还是拦截了，推测是onload 事件的锅，那么换个事件*onmouseover* 就不拦截了。
+
+![25](https://ws1.sinaimg.cn/large/005DAKuvgy1g20ummef92j30vn04kgly.jpg)
+
+问题来了，虽然*onmouseover*事件可以通过滑动鼠标来触发，如何执行*alert*呢?
 
 
