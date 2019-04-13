@@ -147,7 +147,7 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 
 这个规则有个`缺陷`，alert函数后面带有`()`括号就拦截，那么如果我`不用括号`呢?我们不妨来试试`反引号`。
 
-<details/open/ontoggle="alert`1`">
+`<details/open/ontoggle="alert`1`">`
 
 ![18](https://ws1.sinaimg.cn/large/005DAKuvgy1g20rj1z6b3j30vn09cdgn.jpg)
 
