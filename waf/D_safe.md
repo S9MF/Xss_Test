@@ -145,7 +145,7 @@ Waf拦截了，也很正常，常见一些标签`<svg>` `<img>`基本不考虑�
 
 ![17](https://ws1.sinaimg.cn/large/005DAKuvgy1g20re1issej30c80ae3yi.jpg)
 
-这个规则有个`缺陷`，alert函数后面带有`()`括号就拦截，那么如果我`不用括号`呢?我们不妨来试试`反引号`。
+这个规则有个`缺陷`，alert函数后面带有`()`括号就拦截，那么如果我不用括号呢?我们不妨来试试`反引号`。
 
 ```php
 <details/open/ontoggle="alert`1`">
