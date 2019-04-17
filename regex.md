@@ -33,10 +33,16 @@
 
 ### 正则表达式之元字符
 - - -
-`^`匹配行的开始位置。
+1. ^匹配行的开始位置。
+
+如果s9不是作为行开头的字符串，则它不会被匹配。
+
+![7](https://ws1.sinaimg.cn/large/005DAKuvgy1g260wkkmo8j30600563yc.jpg)
+
+2. $匹配行的结尾位置
 
 
 ### 参考
 * https://www.cnblogs.com/william-lin/p/3480231.html
 * http://www.cnblogs.com/zhuzhenwei918/p/6196661.html
-*
+
