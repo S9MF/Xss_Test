@@ -4,5 +4,7 @@
 
 #### 简单的尝试
 - - -
-
+`<script>alert(1)</script>`
 ![1](https://ws1.sinaimg.cn/large/005DAKuvgy1g2ggotblp5j309t060q2t.jpg)
+
+把括号换成反引号，在ES6中模板字符串用反引号（`）标识。
