@@ -24,4 +24,12 @@
 
 ![4](https://i.loli.net/2019/04/27/5cc4160a42b39.jpg)
 
-可以看到现在的风险是中等的，然后我觉得alert不行，那就换prompt，confirm依然是中等。
+可以看到现在的风险是中等的，然后我觉得alert不行，那就换个函数prompt，confirm依然是中等。
+
+当时我深感无奈，就在反引号中加了`?`问号。
+
+![5](https://i.loli.net/2019/04/27/5cc4187ba305d.png)
+
+竟然过了???
+
+![6](https://i.loli.net/2019/04/27/5cc418ad3223f.png)
