@@ -17,3 +17,11 @@
 用反引号的。
 
 ![3](https://ws1.sinaimg.cn/large/005DAKuvgy1g2gxjcbkg9j306o040gle.jpg)
+
+查阅文档模板字符串即反引号的作用，是允许嵌入表达式的字符串字面量，我个人理解是如果你要用反引号执行属性或者对象是不行的。
+
+继续回归正题，我们测试用反引号。
+
+![4](https://ws1.sinaimg.cn/large/005DAKuvgy1g2gy3b8hb9j30b205wglh.jpg)
+
+可以看到现在的风险是中等的，然后我觉得alert不行，那就换prompt，confirm依然是中等。
