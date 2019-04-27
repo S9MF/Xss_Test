@@ -4,7 +4,8 @@
 
 #### 简单的尝试
 - - -
-`<script>alert(1)</script>`
+`<script>alert(1)</script>`   
+
 ![1](https://ws1.sinaimg.cn/large/005DAKuvgy1g2ggotblp5j309t060q2t.jpg)
 
-把括号换成反引号，在ES6中模板字符串用反引号（`）标识。
+把括号换成反引号，这里科普下在ES6中模板字符串用反引号标识``(`)``，``有人说alert(1)等同于alert`1`，``这两种方式确实都可以弹框，但是当你要`document.cookie`的时候，
