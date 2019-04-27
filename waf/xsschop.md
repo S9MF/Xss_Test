@@ -8,4 +8,12 @@
 
 ![1](https://ws1.sinaimg.cn/large/005DAKuvgy1g2ggotblp5j309t060q2t.jpg)
 
-把括号换成反引号，这里科普下在ES6中模板字符串用反引号标识``(`)``，``有人说alert(1)等同于alert`1`，``这两种方式确实都可以弹框，但是当你要`document.cookie`的时候，
+把括号换成反引号，这里科普下在ES6中模板字符串用反引号标识``(`)``，``有人说alert(1)等同于alert`1`，``这两种方式确实都可以弹框，但是当你要`document.cookie`的时候。
+
+用括号的。
+
+![2](https://ws1.sinaimg.cn/large/005DAKuvgy1g2gxihhvjpj3083040glf.jpg)   
+
+用反引号的。
+
+![3](https://ws1.sinaimg.cn/large/005DAKuvgy1g2gxjcbkg9j306o040gle.jpg)
