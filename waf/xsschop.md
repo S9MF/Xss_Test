@@ -24,7 +24,7 @@ http://localhost/2.php?()&xss=" onerror=a=location.search;location="javascript:a
 ```
 ![1](https://i.loli.net/2019/04/27/5cc45cd3a41fa.png)
 
-但是放到xsschop检测时，可以看见前面的双引号无法闭合，前面的双引号一加，等级 Risk: High ，而且+不能url编码。
+但是放到xsschop检测时，可以看见前面缺少一个双引号闭合，因为前面的双引号一加，等级 Risk: High ，而且+不能url编码。
 
 ![2](https://i.loli.net/2019/04/27/5cc45d3991829.png)
 
