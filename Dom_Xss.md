@@ -34,12 +34,14 @@ if(hash){
 有些代码会使用indexOf()来对跳转的url进行判断是否合法。
 ```javascript
 var t = location.search.slice(1)       // 变量t取url中?之后的部分
-if(t.indexOf("url=") > -1 && t.indexOf("https") > -1){  // 限定传入url中要带有indexOf的关键词
+if(t.indexOf("url=") > -1 && t.indexOf("http") > -1){  // 限定传入url中要带有indexOf的关键词
 	var pos = t.indexOf("url=")+4;       // 往后截取
 	url = t.slice(pos,t.length);         
 	location.href = url                 // 跳转
 }
 ```
-正常进行跳转`?url=https://www.baidu.com`
+indexOf会对url进行判断，是否存在关键字http，两个关键字都满足才能执行下面的部分，如果正常请求 ?url=http://cos.top15.cn 没问题，我们构造伪协议?url=javascript:alert(1)，并不会弹窗，正如我们上段所言，需要满足indexOf带有的关键字，所以只要构造`javascript:alert(1)//http`即可完成攻击。
+
+![2](https://i.loli.net/2019/05/13/5cd9709f2927273395.jpg)
 
 
