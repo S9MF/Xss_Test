@@ -13,9 +13,33 @@
 
   攻击代码可以具有隐蔽性，持久性。例如使用Cookie和localStorage作为攻击点的DOM-XSS，非常难以察觉，且持续的时间长。
 
- ### 常见场景
- - - -
+### 常见场景
+- - -
  
- #### 跳转
- 
+#### 跳转
+在很多场景下，业务需要实现页面跳转，常见的使用，`location.href()` `location.replace()` `location.assign()`这些方法通过Javascript实现跳转。我们第一时间可能想到的是限制不严导致任意URL跳转漏洞，而DOM XSS与此似乎“八竿子打不着”，实际上跳转部分参数可控，可能导致Dom xss。
+
+首先我们来看个简单的例子:
+```javascript
+var hash = location.hash;
+if(hash){
+	var url = hash.substring(1);
+	location.href = url;
+}
+```
+变量hash为可控部分，并带入url中，变量hash控制的是#之后的部分，那么可以使用伪协议`#javascript:alert(1)`。
+
+![1](https://i.loli.net/2019/05/13/5cd8e4b81191751510.jpg)
+
+有些代码会使用indexOf()来对跳转的url进行判断是否合法。
+```javascript
+var t = location.search.slice(1)       // 变量t取url中?之后的部分
+if(t.indexOf("url=") > -1 && t.indexOf("https") > -1){  // 限定传入url中要带有indexOf的关键词
+	var pos = t.indexOf("url=")+4;       // 往后截取
+	url = t.slice(pos,t.length);         
+	location.href = url                 // 跳转
+}
+```
+正常进行跳转`?url=https://www.baidu.com`
+
 
