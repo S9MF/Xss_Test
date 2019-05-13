@@ -31,6 +31,17 @@ if(hash){
 
 ![1](https://i.loli.net/2019/05/13/5cd8e4b81191751510.jpg)
 
+这里扩展下，常见的几种伪协议"javascript:","vbscript:","data:"
+
+IE下"vbscript:" 
+
+`vbscript:msgbox(IE)`
+![3](https://i.loli.net/2019/05/13/5cd97dc035b0e48997.jpg)
+
+"data:"
+
+`data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
+
 有些代码会使用indexOf()来对跳转的url进行判断是否合法。
 ```javascript
 var t = location.search.slice(1)       // 变量t取url中?之后的部分
