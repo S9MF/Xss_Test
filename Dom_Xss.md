@@ -40,7 +40,7 @@ if(t.indexOf("url=") > -1 && t.indexOf("http") > -1){  // 限定传入url中要�
 	location.href = url                 // 跳转
 }
 ```
-indexOf会对url进行判断，是否存在关键字http，两个关键字都满足才能执行下面的部分，如果正常请求 ?url=http://cos.top15.cn 没问题，我们构造伪协议?url=javascript:alert(1)，并不会弹窗，正如我们上段所言，需要满足indexOf带有的关键字，所以只要构造`javascript:alert(1)//http`即可完成攻击。
+indexOf会对url进行判断，是否存在关键字http，两个关键字都满足才能执行下面的部分，如果正常请求 `?url=http://cos.top15.cn` 没问题，我们构造`javascript:alert(1)`，并不会弹窗，正如我们上段所言，需要满足indexOf带有的关键字，所以只要构造`javascript:alert(1)//http`即可完成攻击。
 
 ![2](https://i.loli.net/2019/05/13/5cd9709f2927273395.jpg)
 
