@@ -35,12 +35,12 @@ if(hash){
 
 IE下"vbscript:" 
 
-`vbscript:msgbox(IE)`
+`#vbscript:msgbox(IE)`
 ![3](https://i.loli.net/2019/05/13/5cd97dc035b0e48997.jpg)
 
 "data:"
 
-`data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
+`#data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
 
 ##### 使用indexOf判断URL参数是否合法 
 
