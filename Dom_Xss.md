@@ -42,7 +42,8 @@ IE下"vbscript:"
 
 `data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
 
-有些代码会使用indexOf()来对跳转的url进行判断是否合法。
+##### 使用indexOf判断URL参数是否合法 
+
 ```javascript
 var t = location.search.slice(1)       // 变量t取url中?之后的部分
 if(t.indexOf("url=") > -1 && t.indexOf("http") > -1){  // 限定传入url中要带有indexOf的关键词
