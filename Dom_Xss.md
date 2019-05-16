@@ -14,7 +14,8 @@
   攻击代码可以具有隐蔽性，持久性。例如使用Cookie和localStorage作为攻击点的DOM-XSS，非常难以察觉，且持续的时间长。
   
 ![Dom](https://i.loli.net/2019/05/16/5cdcd26779d6f86233.jpg)
-(图片来自：https://twitter.com/k2wanko/status/1126621174874529793)
+
+[图片来自](https://twitter.com/k2wanko/status/1126621174874529793)
 
 ### 常见场景
 - - -
