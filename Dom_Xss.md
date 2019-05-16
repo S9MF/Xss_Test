@@ -69,3 +69,14 @@ indexOf会对url进行判断，是否存在关键字http，两个关键字都满
 #### 取值写入页面或动态执行 
 接受url在前端显示，例如名称，地点，标题等，一般标题等都会将`<>`html实体编码，但在上传文件处，文件的的标题之类的，可能不会太重视。
 
+```javascript
+<div id="msgboard"></div>
+<script>
+ let hash = location.hash;
+    if (hash.length > 1) {
+        let hashValueToUse = unescape(hash.substr(1));
+        let msg = "Welcome <b>" + hashValueToUse + "</b>!!";
+        document.getElementById("msgboard").innerHTML = msg;
+    }
+</script>
+```
