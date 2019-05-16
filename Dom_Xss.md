@@ -85,6 +85,6 @@ innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使�
 
 ```javascript
 
-	location.hash
+	innerHTML
 
 ```
