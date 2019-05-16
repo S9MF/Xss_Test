@@ -100,3 +100,41 @@ document.write(hash);
 上述例子很简单，location.hash的#之后是可控部分传递数据，document.write接收执行。
 
 ![7](https://i.loli.net/2019/05/16/5cdd6bae2823170980.jpg)
+
+#### eval
+执行一段由JavaScript代码组成的字符串。
+```javascript
+eval("var x = '" + location.hash + "'");
+```
+
+![8](https://i.loli.net/2019/05/16/5cdd76490e63b51526.jpg)
+和上面例子一样，有可控外部参数带入数据，接收并执行。慎用危险的`eval`，还有定时器方法是setInterval和setTimeout。
+
+#### 特殊取值
+从localStorage、SessionStorage、Cookies储存源中取数据，这些值往往会被认为来源相对可信，未进行处理。
+```
+let payloadValue = localStorage.getItem("payload", payload);
+let msg = "Welcome " + payload + "!!";
+document.getElementById("msgboard").innerHTML = msg;
+```
+用`https://domgo.at/cxss/example/6`来演示
+
+![10](https://i.loli.net/2019/05/16/5cdd852f1eba847687.jpg)
+
+这里localStorage是数据来源，innerHTML是接受并执行。此外还有document.referrer，window.name，postMessage都值得关注，也容易造成Dom xss，触发点不同，document.referrer可能需要从上一页 / 上面的url，才能触发。
+
+![9](https://i.loli.net/2019/05/16/5cdd825914cdc11533.jpg)
+
+### 最后
+- - -
+Javascript没点基础真的不行，找个xss跟审计似的，看到吐血。
+![10](https://i.loli.net/2019/05/17/5cdd895d1f6f316889.jpg)
+
+### 参考
+- - -
+https://www.secpulse.com/archives/92286.html
+https://mp.weixin.qq.com/s/Ly69JPH8ttDnvUiRRkfIvA
+https://www.owasp.org/images/6/69/OWASP_domxss.pdf
+http://drops.xmd5.com/static/drops/papers-892.html
+https://blog.0daylabs.com/2019/02/24/learning-DomXSS-with-DomGoat/
+
