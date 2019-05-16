@@ -69,6 +69,7 @@ indexOf会对url进行判断，是否存在关键字http，两个关键字都满
 #### 取值写入页面或动态执行 
 接受url在前端显示，例如名称，地点，标题等，一般标题等都会将`<>`html实体编码，但在上传文件处，文件的的标题之类的，可能不会太重视。
 
+#### innerHTML
 ```javascript
 <div id="msgboard"></div>
 <script>
@@ -89,3 +90,4 @@ innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使�
 ![6](https://i.loli.net/2019/05/16/5cdd1e782185834598.jpg)
 
 [图片来自](http://www.softwhy.com/article-9295-1.html)
+
