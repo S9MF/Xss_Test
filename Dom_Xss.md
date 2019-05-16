@@ -91,3 +91,12 @@ innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使�
 
 [图片来自](http://www.softwhy.com/article-9295-1.html)
 
+#### document.write
+document.write方法可以在文档中写入指定的字符串。
+```javascript
+var hash = location.hash.slice(1);
+document.write(hash);
+```
+上述例子很简单，location.hash的#之后是可控部分传递数据，document.write接收执行。
+
+![7](https://i.loli.net/2019/05/16/5cdd6bae2823170980.jpg)
