@@ -128,7 +128,7 @@ document.getElementById("msgboard").innerHTML = msg;
 
 ### 最后
 - - -
-Javascript没点基础真的不行，找个xss跟审计似的，看到吐血。
+写完这篇水文后。。。
 
 ![10](https://i.loli.net/2019/05/17/5cdd895d1f6f316889.jpg)
 
