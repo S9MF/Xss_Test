@@ -82,9 +82,4 @@ indexOf会对url进行判断，是否存在关键字http，两个关键字都满
 ```
 innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使用频繁且极为简单。如上代码变量hash是可控的，
 
-
-```javascript
-
-	innerHTML
-
-```
+![5](https://i.loli.net/2019/05/16/5cdd1b1df2cdc12587.jpg)
