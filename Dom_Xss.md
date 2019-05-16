@@ -128,7 +128,7 @@ document.getElementById("msgboard").innerHTML = msg;
 
 ### 最后
 - - -
-写完这篇水文后。。。
+写完这篇水文后。。。如有错误，请师傅指正。
 
 ![10](https://i.loli.net/2019/05/17/5cdd895d1f6f316889.jpg)
 
