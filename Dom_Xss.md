@@ -83,3 +83,9 @@ indexOf会对url进行判断，是否存在关键字http，两个关键字都满
 innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使用频繁且极为简单。如上代码变量hash是可控的，取值后，通过innerHTML写入div中。
 
 ![5](https://i.loli.net/2019/05/16/5cdd1b1df2cdc12587.jpg)
+
+以下三个属性都可以修改节点，innerHTML \ outerHTML 使用时要注意，是否写入标签，标签需要进行编码处理。而innerText就比较特殊，它自动将HTML标签解析为普通文本，所以HTML标签不会被执行，避免XSS攻击。
+
+![6](https://i.loli.net/2019/05/16/5cdd1e782185834598.jpg)
+
+[图片来自](http://www.softwhy.com/article-9295-1.html)
