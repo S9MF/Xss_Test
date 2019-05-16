@@ -64,10 +64,10 @@ indexOf会对url进行判断，是否存在关键字http，两个关键字都满
 
 ![4](https://i.loli.net/2019/05/14/5cda855258fe377201.jpg)
 
-对跳转的url，通过正则进行判断是否合法http(s)，容易忽略元字符`^`(匹配行的开始位置)，加上和不加上，过滤的效果具有天壤之别。因为正则并没有严格限定跳转的url必须是http(s)开头，那么`javascript:alert(1)//http://cos.top15.cn`即可绕过。还有一些正则要求匹配上一些符号，字符串，参数类的加上就可以了，主要得看得懂令人头晕的正则。
+对跳转的url，通过正则进行判断是否合法http(s)，容易忽略元字符`^`(匹配行的开始位置)，加上和不加上，过滤的效果具有天壤之别。因为正则并没有严格限定跳转的url必须是http(s)开头，那么`javascript:alert(1)//http://cos.top15.cn`即可绕过。还有一些正则要求匹配上一些`符号`，`字符串`，`参数类`的加上就可以了，主要得看得懂令人头晕的`正则`。
 
 #### 取值写入页面或动态执行 
-接受url在前端显示，例如名称，地点，标题等，一般标题等都会将`<>`html实体编码，但在上传文件处，文件的的标题之类的，可能不会太重视。
+接受url在前端显示，例如名称，地点，标题等，一般标题等都会将`<>`html实体编码，但在上传文件处，`文件的的标题`之类的，可能不会太重视。
 
 #### innerHTML
 ```javascript
@@ -85,7 +85,7 @@ innerHTML属性可以设置或者返回指定元素的HTML内容，此属性使�
 
 ![5](https://i.loli.net/2019/05/16/5cdd1b1df2cdc12587.jpg)
 
-以下三个属性都可以修改节点，innerHTML \ outerHTML 使用时要注意，是否写入标签，标签需要进行编码处理。而innerText就比较特殊，它自动将HTML标签解析为普通文本，所以HTML标签不会被执行，避免XSS攻击。
+以下三个属性都可以修改节点，`innerHTML \ outerHTML` 使用时要注意，是否写入标签，标签需要进行编码处理。而`innerText`就比较特殊，它`自动`将HTML标签解析为普通文本，所以HTML标签不会被`执行`，避免XSS攻击。
 
 ![6](https://i.loli.net/2019/05/16/5cdd1e782185834598.jpg)
 
@@ -97,7 +97,7 @@ document.write方法可以在文档中写入指定的字符串。
 var hash = location.hash.slice(1);
 document.write(hash);
 ```
-上述例子很简单，location.hash的#之后是可控部分传递数据，document.write接收执行。
+上述例子很简单，`location.hash`的#之后是可控部分传递数据，`document.write`接收执行。
 
 ![7](https://i.loli.net/2019/05/16/5cdd6bae2823170980.jpg)
 
@@ -108,10 +108,11 @@ eval("var x = '" + location.hash + "'");
 ```
 
 ![8](https://i.loli.net/2019/05/16/5cdd76490e63b51526.jpg)
-和上面例子一样，有可控外部参数带入数据，接收并执行。慎用危险的`eval`，还有定时器方法是setInterval和setTimeout。
+
+和上面例子一样，有`可控外部参数`带入数据，接收并执行。慎用危险的`eval`，还有定时器方法是`setInterval`和`setTimeout`。
 
 #### 特殊取值
-从localStorage、SessionStorage、Cookies储存源中取数据，这些值往往会被认为来源相对可信，未进行处理。
+从`localStorage`、`SessionStorage`、`Cookies`储存源中取数据，这些值往往会被认为来源相对可信，未进行`处理`。
 ```
 let payloadValue = localStorage.getItem("payload", payload);
 let msg = "Welcome " + payload + "!!";
@@ -121,7 +122,7 @@ document.getElementById("msgboard").innerHTML = msg;
 
 ![10](https://i.loli.net/2019/05/16/5cdd852f1eba847687.jpg)
 
-这里localStorage是数据来源，innerHTML是接受并执行。此外还有document.referrer，window.name，postMessage都值得关注，也容易造成Dom xss，触发点不同，document.referrer可能需要从上一页 / 上面的url，才能触发。
+这里`localStorage`是数据来源，`innerHTML`是接受并执行。此外还有`document.referrer`，`window.name`，`postMessage`都值得关注，也容易造成Dom xss，`触发点`不同，`document.referrer`可能需要从上一页 / 上面的url，才能触发。
 
 ![9](https://i.loli.net/2019/05/16/5cdd825914cdc11533.jpg)
 
@@ -133,9 +134,9 @@ Javascript没点基础真的不行，找个xss跟审计似的，看到吐血。
 
 ### 参考
 - - -
-https://www.secpulse.com/archives/92286.html
-https://mp.weixin.qq.com/s/Ly69JPH8ttDnvUiRRkfIvA
-https://www.owasp.org/images/6/69/OWASP_domxss.pdf
-http://drops.xmd5.com/static/drops/papers-892.html
-https://blog.0daylabs.com/2019/02/24/learning-DomXSS-with-DomGoat/
+* https://www.secpulse.com/archives/92286.html
+* https://mp.weixin.qq.com/s/Ly69JPH8ttDnvUiRRkfIvA
+* https://www.owasp.org/images/6/69/OWASP_domxss.pdf
+* http://drops.xmd5.com/static/drops/papers-892.html
+* https://blog.0daylabs.com/2019/02/24/learning-DomXSS-with-DomGoat/
 
