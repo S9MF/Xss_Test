@@ -17,13 +17,13 @@
 
 `<x oncopy=y=prompt,y``>z` `<x onpaste=y=prompt,y``>z`
 
-![4.png](https://ae01.alicdn.com/kf/U64ba93f45194444b8dd25e8906db9238l.png)
+![4.png](https://ae01.alicdn.com/kf/Ua6a276b50d5040e586d9438d7fb2dfc3v.png)
 
 `oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是按下 `CTRL + C`
 
 `onpaste 事件`在用户向元素中粘贴文本时触发，所以触发的方法是按下 `CTRL + V`
 
-![5.png](https://ae01.alicdn.com/kf/U126f5615b33d43caab65c5f42051f03bk.png)
+![5.png](https://ae01.alicdn.com/kf/Uf33f53f157c444b694f9eae7bedc5bd5Q.png)
 
 再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上3个例子就是`复制粘贴剪切` ━━∑(￣□￣*|||━━
 
