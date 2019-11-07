@@ -13,3 +13,14 @@
 - - -
 既然来了测试下，先从容易满足的点出发，我就假设有个参数`?xss=`后面不用考虑闭合之类的，毕竟实战遇到的点各有不同。
 
+首先来看个鸡肋而有趣的例子 ，从图可以看出没有被拦截。
+
+`<x oncopy=y=prompt,y``>z`
+
+![4.png](https://ae01.alicdn.com/kf/U64ba93f45194444b8dd25e8906db9238l.png)
+
+`oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是 `CTRL + C`
+
+![5.png](https://ae01.alicdn.com/kf/U5db9c6ebb2244733896f050e8477ff99b.png)
+
+再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上2个例子就是复制剪切(lll￢ω￢)
