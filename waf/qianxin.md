@@ -292,3 +292,7 @@ for(i=0;i<labs.length;i++){
 }
 ```
 其他脚本可以去Github寻找，这样收集构造出属于自己的xss_payload.txt 测试时直接fuzz看结果，再根据结果进一步fuzz。
+
+## 后记
+- - -
+大家平时可以去推特逛逛，HackerOne精彩xss文章等，收集扩展逐步完善自己的字典。
