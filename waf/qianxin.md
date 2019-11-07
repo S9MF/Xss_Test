@@ -13,7 +13,7 @@
 - - -
 既然来了测试下，先从容易满足的点出发，我就假设有个参数`?xss=`后面不用考虑闭合之类的，毕竟实战遇到的点各有不同。
 
-首先来看个鸡肋而有趣的例子在推特看到的。
+首先来看个鸡肋而有趣的例子在推特看到的，作者@`sOmd3v @Ow4ys`
 
 `<x oncopy=y=prompt,y``>z` `<x onpaste=y=prompt,y``>z`
 
@@ -27,6 +27,7 @@
 
 再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上3个例子就是`复制粘贴剪切` ━━∑(￣□￣*|||━━
 
-比较实用的`onmouseover事件`被拦截了，还有
+比较实用的`onmouseover事件`被拦截了，还有onmousedown，onmouseup(这两个需点击字符z)...等on事件感兴趣可以自己查看手册测试
 
 ![7.png](https://ae01.alicdn.com/kf/Uafa9f3e5e9654b3cb61d886f8c70b7afU.png)
+
