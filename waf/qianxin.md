@@ -21,6 +21,6 @@
 
 `oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是 `CTRL + C`
 
-![5.png](https://ae01.alicdn.com/kf/U5db9c6ebb2244733896f050e8477ff99b.png)
+![5.png](https://ae01.alicdn.com/kf/U126f5615b33d43caab65c5f42051f03bk.png)
 
 再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上2个例子就是复制剪切(lll￢ω￢)
