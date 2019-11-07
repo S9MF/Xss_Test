@@ -15,14 +15,17 @@
 
 首先来看个鸡肋而有趣的例子在推特看到的。
 
-`<x oncopy=y=prompt,y``>z`
+`<x oncopy=y=prompt,y``>z` `<x onpaste=y=prompt,y``>z`
 
 ![4.png](https://ae01.alicdn.com/kf/U64ba93f45194444b8dd25e8906db9238l.png)
 
-`oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是 `CTRL + C`
+`oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是按下 `CTRL + C`
+`onpaste 事件`在用户向元素中粘贴文本时触发，所以触发的方法是按下 `CTRL + V`
 
 ![5.png](https://ae01.alicdn.com/kf/U126f5615b33d43caab65c5f42051f03bk.png)
 
-再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上2个例子就是`复制剪切`(lll￢ω￢)
+再来看一个`<x oncut=y=prompt,y``>z`这个例子触发是`CTRL + X`以上3个例子就是`复制粘贴剪切` ━━∑(￣□￣*|||━━
+
+比较实用的`onmouseover事件`被拦截了，还有
 
 ![7.png](https://ae01.alicdn.com/kf/Uafa9f3e5e9654b3cb61d886f8c70b7afU.png)
