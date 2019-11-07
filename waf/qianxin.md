@@ -46,7 +46,7 @@ Bypass payload:
 - - -
 为什么我很快能得到Bypass payload呢，因为我自己有收集和构造属于自己的字典，下面我大概讲解下自己的思路。
 
-![9.png](https://ae01.alicdn.com/kf/Ua94d1a7baeb249898c60906edc6929b1p.png)
+![10.png](https://ae01.alicdn.com/kf/Uf92464d4ceaa45c4b0d53711abdc76efp.png)
 
 ### [TAG]标签
 从上图看出一个xss的基本结构，
