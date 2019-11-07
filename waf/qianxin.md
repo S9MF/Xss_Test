@@ -20,6 +20,7 @@
 ![4.png](https://ae01.alicdn.com/kf/U64ba93f45194444b8dd25e8906db9238l.png)
 
 `oncopy 事件`在用户拷贝元素上的内容时触发(反引号可以替换为括号)，所以触发的方法是按下 `CTRL + C`
+
 `onpaste 事件`在用户向元素中粘贴文本时触发，所以触发的方法是按下 `CTRL + V`
 
 ![5.png](https://ae01.alicdn.com/kf/U126f5615b33d43caab65c5f42051f03bk.png)
