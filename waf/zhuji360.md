@@ -96,3 +96,9 @@ phpStudy2016(PHP-5.4.45+Apache)
 
 绕过
 ![11.png](https://ae01.alicdn.com/kf/Ufe4b45196d59424c930e54b49efa091aK.png)
+
+### 小结
+此次利用 `>` 字符的编码绕过的姿势，再到其他 waf 测试到此结束，至于其他特殊字符是否也有绕过，感兴趣的可以研究下，如有错误之处，请师傅指正。
+
+### 参考
+[xss加入某些字符即可过大多数waf的思路及一些思考](https://mp.weixin.qq.com/s/CCc12FWWJMRP4V6x0XXaoA)
