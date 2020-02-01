@@ -2,7 +2,7 @@
 - - -
 360主机卫士是360旗下的服务器安全软件，为站长免费提供网站后门检测、木马查杀，网站补丁、漏洞防护等服务...
 
-![1.png](https://ae01.alicdn.com/kf/Uad2732ca0c4943088ca09f550ff5caccL.png)
+![1](https://ae01.alicdn.com/kf/Uad2732ca0c4943088ca09f550ff5caccL.png)
 
 (虽然软件几年前就停止更新，官网挂了，但是从当时的评论上看软件还是很不错的。)
 
@@ -29,10 +29,8 @@ phpStudy2016(PHP-5.4.45+Apache)
 
 具体绕过就是先把 `>` html实体编码
 
-![2.png](https://img.vim-cn.com/17/5b0aeab400afdaa4a42f877181e6ef6270d965.png
-)
+![2](https://ae01.alicdn.com/kf/Ue6dc8da4a8ac4497a96828e039c729574.png)
 
 将 `&#62` URL编码
 
-![3.png](https://img.vim-cn.com/a4/da958e2bdb2d12d1d1f6b1ba0eebeb64999465.png
-)
+![3](https://ae01.alicdn.com/kf/U143681d1e9b64df0b67ebab674991c93N.png)
