@@ -19,3 +19,18 @@ phpStudy2016(PHP-5.4.45+Apache)
   echo "<div>".$input."</div>"
 ?>
 ```
+### 测试
+- - -
+习惯性的直接上 Burp 用平时收集的 payload fuzz 一遍，结果不怎么理想，能过的很鸡肋...然后我就去网上找资料，找到了一篇文章[xss加入某些字符即可过大多数waf的思路及一些思考](https://mp.weixin.qq.com/s/CCc12FWWJMRP4V6x0XXaoA)根据里面的思路可以绕过。
+
+`<svg onload>` 拦截
+
+`<svg > onload>`不拦截
+
+具体绕过就是先把 `>` html实体编码
+
+![2.png](https://ae01.alicdn.com/kf/U0876f95632474f0d8864c1391f95d7bdK.png)
+
+将 `&#62` URL编码
+
+![3.png](https://ae01.alicdn.com/kf/Uafdafafe9faf48e7abfd46f965215a02e.png)
