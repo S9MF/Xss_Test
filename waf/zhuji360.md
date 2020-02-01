@@ -8,6 +8,8 @@
 
 ### 环境
 - - -
+火狐
+
 360主机卫士Apache版
 
 phpStudy2016(PHP-5.4.45+Apache)
@@ -34,3 +36,9 @@ phpStudy2016(PHP-5.4.45+Apache)
 将 `&#62` URL编码
 
 ![3](https://ae01.alicdn.com/kf/U143681d1e9b64df0b67ebab674991c93N.png)
+
+大部分 `xss payload` 加上 `%26%2362` 即可绕过，但是类似 alert(1) 括号可能会被拦截 可以用反引号替换
+```
+<svg %26%2362 onload=alert`1`>
+```
+
