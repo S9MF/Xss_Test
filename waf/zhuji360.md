@@ -29,8 +29,10 @@ phpStudy2016(PHP-5.4.45+Apache)
 
 具体绕过就是先把 `>` html实体编码
 
-![2.png](https://ae01.alicdn.com/kf/U0876f95632474f0d8864c1391f95d7bdK.png)
+![2.png](https://img.vim-cn.com/17/5b0aeab400afdaa4a42f877181e6ef6270d965.png
+)
 
 将 `&#62` URL编码
 
-![3.png](https://ae01.alicdn.com/kf/Uafdafafe9faf48e7abfd46f965215a02e.png)
+![3.png](https://img.vim-cn.com/a4/da958e2bdb2d12d1d1f6b1ba0eebeb64999465.png
+)
