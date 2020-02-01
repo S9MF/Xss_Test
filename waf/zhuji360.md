@@ -92,3 +92,7 @@ phpStudy2016(PHP-5.4.45+Apache)
 
 ![10.png](https://ae01.alicdn.com/kf/U3d07d821e85a4a028b8eb360e7c78a04X.png)
 
+`百度云加速`：
+
+绕过
+![11.png](https://ae01.alicdn.com/kf/Ufe4b45196d59424c930e54b49efa091aK.png)
